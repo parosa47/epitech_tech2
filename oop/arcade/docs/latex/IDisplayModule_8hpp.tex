@@ -1,0 +1,56 @@
+\hypertarget{IDisplayModule_8hpp}{}\doxysection{src/interfaces/\+IDisplay\+Module.hpp File Reference}
+\label{IDisplayModule_8hpp}\index{src/interfaces/IDisplayModule.hpp@{src/interfaces/IDisplayModule.hpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include \char`\"{}Event.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}}
+\item 
+class \mbox{\hyperlink{classarcade_1_1IDisplayModule}{arcade\+::\+IDisplay\+Module}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacearcade}{arcade}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{arcade\+::\+Block\+Type}} \{ \newline
+\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbcad768e45675c976cdc93af3351e99312f}{arcade\+::\+Brick\+Wall}}
+, \mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbcaaac9a63596f76a62bb9f61a5dd7c0d25}{arcade\+::\+Grass}}
+, \mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbca3b26194b13edb91ea719ef5cbee8d5bd}{arcade\+::\+Fruit}}
+, \mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbcaff45bd9a024c61169a542316bd7b3b1a}{arcade\+::\+Coin}}
+, \newline
+\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbca76a40e4f974fd895a0a2598c1cee28b4}{arcade\+::\+Character}}
+, \mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbca8c6d21187fb58b7a079d70030686b33e}{arcade\+::\+Enemy}}
+, \mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbcafe9608b7c2133c418171eb128124f1aa}{arcade\+::\+Enemy\+Vulnerable}}
+, \mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbcad420185b09197dc35bb4d368b215b350}{arcade\+::\+Enemy\+Dead}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{arcade\+::\+Sound}} \{ \newline
+\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefaaff45bd9a024c61169a542316bd7b3b1a}{arcade\+::\+Coin}}
+, \mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefaa62c8a2522be2668b5452181d07dd8964}{arcade\+::\+Hurt}}
+, \mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefaa8f347bc7cebca9fa6d97e70c6bc29eb3}{arcade\+::\+Game\+Over}}
+, \mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefaaa6122a65eaa676f700ae68d393054a37}{arcade\+::\+Start}}
+, \newline
+\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefaa0ce3266d4eb71ad50f7a90aee6d21dcd}{arcade\+::\+Super}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1IDisplayModule}{arcade\+::\+IDisplay\+Module}} $\ast$ \mbox{\hyperlink{IDisplayModule_8hpp_a8850a0630e8edaed76cf8105bda2d903}{create\+Display\+Module}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{IDisplayModule_8hpp_a8850a0630e8edaed76cf8105bda2d903}\label{IDisplayModule_8hpp_a8850a0630e8edaed76cf8105bda2d903}} 
+\index{IDisplayModule.hpp@{IDisplayModule.hpp}!createDisplayModule@{createDisplayModule}}
+\index{createDisplayModule@{createDisplayModule}!IDisplayModule.hpp@{IDisplayModule.hpp}}
+\doxysubsubsection{\texorpdfstring{createDisplayModule()}{createDisplayModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1IDisplayModule}{arcade\+::\+IDisplay\+Module}}$\ast$ create\+Display\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The entry point of the library, which is responsible for creating the display module 

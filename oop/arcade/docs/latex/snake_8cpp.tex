@@ -1,0 +1,52 @@
+\hypertarget{snake_8cpp}{}\doxysection{src/\+Lgame/snake/snake.cpp File Reference}
+\label{snake_8cpp}\index{src/Lgame/snake/snake.cpp@{src/Lgame/snake/snake.cpp}}
+{\ttfamily \#include \char`\"{}snake.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{snake_8cpp_a6ea0517f8d260011887f6439e8588307}{head\+On\+Kill\+Bloc}} (const \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} \&snake\+Head, const \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} \&bloc)
+\item 
+bool \mbox{\hyperlink{snake_8cpp_ac1a8cfdf4e8d12261aa232927eb5f0ff}{is\+Fruit\+On\+Snake}} (const std\+::vector$<$ \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} $>$ \&snake\+Cara, const \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} \&fruit)
+\begin{DoxyCompactList}\small\item\em check if the snake is dead or not \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1IGameModule}{arcade\+::\+IGame\+Module}} $\ast$ \mbox{\hyperlink{snake_8cpp_a10fff0a7584ecac29f8db2549f037e0e}{create\+Game\+Module}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{snake_8cpp_a10fff0a7584ecac29f8db2549f037e0e}\label{snake_8cpp_a10fff0a7584ecac29f8db2549f037e0e}} 
+\index{snake.cpp@{snake.cpp}!createGameModule@{createGameModule}}
+\index{createGameModule@{createGameModule}!snake.cpp@{snake.cpp}}
+\doxysubsubsection{\texorpdfstring{createGameModule()}{createGameModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1IGameModule}{arcade\+::\+IGame\+Module}}$\ast$ create\+Game\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The entry point of the library, which is responsible for creating the game module \mbox{\Hypertarget{snake_8cpp_a6ea0517f8d260011887f6439e8588307}\label{snake_8cpp_a6ea0517f8d260011887f6439e8588307}} 
+\index{snake.cpp@{snake.cpp}!headOnKillBloc@{headOnKillBloc}}
+\index{headOnKillBloc@{headOnKillBloc}!snake.cpp@{snake.cpp}}
+\doxysubsubsection{\texorpdfstring{headOnKillBloc()}{headOnKillBloc()}}
+{\footnotesize\ttfamily bool head\+On\+Kill\+Bloc (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} \&}]{snake\+Head,  }\item[{const \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} \&}]{bloc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{snake_8cpp_ac1a8cfdf4e8d12261aa232927eb5f0ff}\label{snake_8cpp_ac1a8cfdf4e8d12261aa232927eb5f0ff}} 
+\index{snake.cpp@{snake.cpp}!isFruitOnSnake@{isFruitOnSnake}}
+\index{isFruitOnSnake@{isFruitOnSnake}!snake.cpp@{snake.cpp}}
+\doxysubsubsection{\texorpdfstring{isFruitOnSnake()}{isFruitOnSnake()}}
+{\footnotesize\ttfamily bool is\+Fruit\+On\+Snake (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} $>$ \&}]{snake\+Cara,  }\item[{const \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} \&}]{fruit }\end{DoxyParamCaption})}
+
+
+
+check if the snake is dead or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+snake\+Cara} & the snake\textquotesingle{}s body \\
+\hline
+{\em position} & of block \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the snake is on block 
+
+false if the snake is not on block 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}

@@ -1,0 +1,145 @@
+\hypertarget{classarcade_1_1IDisplayModule}{}\doxysection{arcade\+::IDisplay\+Module Class Reference}
+\label{classarcade_1_1IDisplayModule}\index{arcade::IDisplayModule@{arcade::IDisplayModule}}
+
+
+{\ttfamily \#include $<$IDisplay\+Module.\+hpp$>$}
+
+Inheritance diagram for arcade\+::IDisplay\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1IDisplayModule}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classarcade_1_1IDisplayModule_ad0c04d17b45fdb5c51589ce4b08d8626}{$\sim$\+IDisplay\+Module}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplayModule_a4977e9d3269f643097dc7541b14efd9d}{display\+Block}} (\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}} block\+Type, \mbox{\hyperlink{structarcade_1_1Position}{Position}} pos)=0
+\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplayModule_af71e4823004b5eeb9cfe69fc22cfeaae}{display\+Text}} (const std\+::string \&text, \mbox{\hyperlink{structarcade_1_1Position}{Position}} pos)=0
+\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplayModule_a1d4538558d9fd5237fb91604e1b7d692}{clear}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplayModule_af724ff4cdee60787cc30475a06f8b9e6}{refresh}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplayModule_a58c6cd5ff24c19af166395de4ad7a52a}{play\+Sound}} (\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{Sound}} sound)=0
+\item 
+virtual std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{Event}} $>$ \mbox{\hyperlink{classarcade_1_1IDisplayModule_acb4657aca3a807b4cbba707fd5ba656e}{poll\+Event}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplayModule_af50661bdc3546d41bc5323857b2b1d51}{set\+Window\+Size}} (\mbox{\hyperlink{structarcade_1_1Position}{Position}} size)=0
+\item 
+virtual \mbox{\hyperlink{structarcade_1_1Position}{Position}} \mbox{\hyperlink{classarcade_1_1IDisplayModule_aeb7fe1773855a8d8d1ebd063a4758f64}{get\+Window\+Size}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classarcade_1_1IDisplayModule_a031086aa802c05fbef922254f5f1e969}{set\+Window\+Title}} (const std\+::string \&title)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A graphical module, which handles displaying the arcade games 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_ad0c04d17b45fdb5c51589ce4b08d8626}\label{classarcade_1_1IDisplayModule_ad0c04d17b45fdb5c51589ce4b08d8626}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!````~IDisplayModule@{$\sim$IDisplayModule}}
+\index{````~IDisplayModule@{$\sim$IDisplayModule}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$IDisplayModule()}{~IDisplayModule()}}
+{\footnotesize\ttfamily virtual arcade\+::\+IDisplay\+Module\+::$\sim$\+IDisplay\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+The destructor, which is responsible for cleaning up all resources 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_a1d4538558d9fd5237fb91604e1b7d692}\label{classarcade_1_1IDisplayModule_a1d4538558d9fd5237fb91604e1b7d692}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!clear@{clear}}
+\index{clear@{clear}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+Module\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reset the shown screen 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a19e38ceac24e52a93aeb9e7a3cca2048}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a46c808edf403739cda28d2476eb9a6a1}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a56576c2fe62c1ed521460408dce7cf5c}{arcade\+::\+ADisplay\+Ncurses}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_a4977e9d3269f643097dc7541b14efd9d}\label{classarcade_1_1IDisplayModule_a4977e9d3269f643097dc7541b14efd9d}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!displayBlock@{displayBlock}}
+\index{displayBlock@{displayBlock}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{displayBlock()}{displayBlock()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+Module\+::display\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}}}]{block\+Type,  }\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Display a block on screen at the specified position 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_ab11e22a612bfda957528c4d25ff531b7}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_aa8c59dde553872616f186663468705b6}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_ae43c3155660dca9ca1721e314de4df6d}{arcade\+::\+ADisplay\+Ncurses}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_af71e4823004b5eeb9cfe69fc22cfeaae}\label{classarcade_1_1IDisplayModule_af71e4823004b5eeb9cfe69fc22cfeaae}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!displayText@{displayText}}
+\index{displayText@{displayText}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{displayText()}{displayText()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+Module\+::display\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Display a string on screen at the specified position 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a1f2a25944d1c6dca941e0a22b134dd1b}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a701186dd2d48f472c7806ee9cd6cccb7}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_ac109f147efa9046c5f0bd251f68cdf46}{arcade\+::\+ADisplay\+Ncurses}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_aeb7fe1773855a8d8d1ebd063a4758f64}\label{classarcade_1_1IDisplayModule_aeb7fe1773855a8d8d1ebd063a4758f64}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structarcade_1_1Position}{Position}} arcade\+::\+IDisplay\+Module\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get window size in blocks. 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_aa73feafa3282ab038b8c2eda1876267c}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a716491c3de03adeeecbdb20dbe92d93c}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_aeada47355fb9e3b4799196fafa4c30fa}{arcade\+::\+ADisplay\+Ncurses}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_a58c6cd5ff24c19af166395de4ad7a52a}\label{classarcade_1_1IDisplayModule_a58c6cd5ff24c19af166395de4ad7a52a}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!playSound@{playSound}}
+\index{playSound@{playSound}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+Module\+::play\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Play a sound 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a95f7433c2e8c9d740d8a6bd006ee5685}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_af695605cfe019725fa12a6b547436c7e}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_ae1e612629b2b2d4188777a9e3d33c8ef}{arcade\+::\+ADisplay\+Ncurses}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_acb4657aca3a807b4cbba707fd5ba656e}\label{classarcade_1_1IDisplayModule_acb4657aca3a807b4cbba707fd5ba656e}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!pollEvent@{pollEvent}}
+\index{pollEvent@{pollEvent}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{pollEvent()}{pollEvent()}}
+{\footnotesize\ttfamily virtual std\+::list$<$\mbox{\hyperlink{structarcade_1_1Event}{Event}}$>$ arcade\+::\+IDisplay\+Module\+::poll\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pop an event. The event will be removed from the list of pending events. 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a2a8991d89dbd39e90e46321aae405ef2}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_ae159c14eb7383ccac1e4de819cf2bca4}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a5eadda2282b03aa6242780dc61b3f960}{arcade\+::\+ADisplay\+Ncurses}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_af724ff4cdee60787cc30475a06f8b9e6}\label{classarcade_1_1IDisplayModule_af724ff4cdee60787cc30475a06f8b9e6}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!refresh@{refresh}}
+\index{refresh@{refresh}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+Module\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Refresh the screen, so that the view is updated 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_acf65865fea0c6c4fd4b7a37b6ccff017}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a0d9773e3fb134b2527b401185674d626}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a05350a4241ebec1123834684064caf85}{arcade\+::\+ADisplay\+Ncurses}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_af50661bdc3546d41bc5323857b2b1d51}\label{classarcade_1_1IDisplayModule_af50661bdc3546d41bc5323857b2b1d51}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!setWindowSize@{setWindowSize}}
+\index{setWindowSize@{setWindowSize}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{setWindowSize()}{setWindowSize()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+Module\+::set\+Window\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Try setting window size in blocks. 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a57c2a5cdacf1c33428c73044b5712a5c}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a605a3665e67e91d5de02bfb6dedc44b8}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_aa662b86e92886193d9a1ba9f6c04f5da}{arcade\+::\+ADisplay\+Ncurses}}.
+
+\mbox{\Hypertarget{classarcade_1_1IDisplayModule_a031086aa802c05fbef922254f5f1e969}\label{classarcade_1_1IDisplayModule_a031086aa802c05fbef922254f5f1e969}} 
+\index{arcade::IDisplayModule@{arcade::IDisplayModule}!setWindowTitle@{setWindowTitle}}
+\index{setWindowTitle@{setWindowTitle}!arcade::IDisplayModule@{arcade::IDisplayModule}}
+\doxysubsubsection{\texorpdfstring{setWindowTitle()}{setWindowTitle()}}
+{\footnotesize\ttfamily virtual void arcade\+::\+IDisplay\+Module\+::set\+Window\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Set the title of the window 
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a99981c381dda473fdda1283456fd496c}{arcade\+::\+ADisplay\+Sfml}}, \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a0d3354daa1861af9815b3f7e0540443c}{arcade\+::\+ADisplay\+Sdl}}, and \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a29ef8d4a30e40ccacdf2f74185dad9f4}{arcade\+::\+ADisplay\+Ncurses}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/interfaces/\mbox{\hyperlink{IDisplayModule_8hpp}{IDisplay\+Module.\+hpp}}\end{DoxyCompactItemize}

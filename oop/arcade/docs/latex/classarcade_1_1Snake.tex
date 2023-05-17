@@ -1,0 +1,391 @@
+\hypertarget{classarcade_1_1Snake}{}\doxysection{arcade\+::Snake Class Reference}
+\label{classarcade_1_1Snake}\index{arcade::Snake@{arcade::Snake}}
+
+
+{\ttfamily \#include $<$snake.\+hpp$>$}
+
+Inheritance diagram for arcade\+::Snake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1Snake}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Snake_ac2d67bc373332c9c8dc52743efc052ce}{Snake}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classarcade_1_1Snake_ac2d67bc373332c9c8dc52743efc052ce}{arcade\+::\+Snake\+::\+Snake}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Snake_a93abcd4ea476f99f468371c738500716}{$\sim$\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classarcade_1_1Snake_ac2d67bc373332c9c8dc52743efc052ce}{arcade\+::\+Snake\+::\+Snake}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a45eb7be680fb6ba2246d112216ef1867}{tick}} (\mbox{\hyperlink{classarcade_1_1IDisplayModule}{IDisplay\+Module}} \&display\+Module, const std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{Event}} $>$ \&events) override
+\begin{DoxyCompactList}\small\item\em fonction called by the core to start the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_ae0339891746dbe0c66dec4c7de9b835c}{start}} (\mbox{\hyperlink{classarcade_1_1ICore}{ICore}} \&\mbox{\hyperlink{namespacearcade_a926eed97ba54f4a45d080a02fead47a2}{core}}) override
+\item 
+std\+::string \mbox{\hyperlink{classarcade_1_1Snake_a523f32b860b6cba6511c7577885a8622}{get\+Name}} () const override
+\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a4d55283284ea6469f5306169b0061045}{print\+Map}} ()
+\begin{DoxyCompactList}\small\item\em print \+\_\+\+Map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a2bddf9b1cc96c4fff9bc6edaf49ac176}{print\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em print \+\_\+snake\+Cara \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a28dd20ebbb7f56d52e76aa4e68b7268c}{print\+Fruit}} ()
+\begin{DoxyCompactList}\small\item\em print the fruit on the map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a08696a800d7166426d9d0fee14b7a3e3}{set\+New\+Fruit}} ()
+\begin{DoxyCompactList}\small\item\em set new position for the fruit \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a1986d46a220f897e126c5b3db1ec1d4e}{snake\+Eat\+Fruit}} ()
+\begin{DoxyCompactList}\small\item\em check if the snake eat the fruit and if yes, add a new block to the snake\textquotesingle{}s body and set a new fruit position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a66d08a88430a0e1b4e3dffa62c602334}{print\+Score\+And\+Name}} ()
+\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_ae9d9ca36be933f0b9fa1c32e9973efa7}{print\+High\+Score}} ()
+\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a7d9e21ec4ad4ab1995794572ca0b21d2}{game\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em pause the game and wait for a pause event to resume the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a08cb01260be553b50be9fb0249285e27}{apply\+Event}} ()
+\begin{DoxyCompactList}\small\item\em parse and aplly \+\_\+events to the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a23100f12950e095f79db427d14037173}{change\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em change snake direction and move it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a2af97038850698bb96e046a20239f815}{death\+Condition}} ()
+\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a1437c46c2fd5cb4bed0e34ea2ec8be5f}{move\+Corps}} ()
+\begin{DoxyCompactList}\small\item\em move the snake\textquotesingle{}s body to the head position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_ac007a82d10acb894a7ee840aefebf7c3}{move\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em call all move function to move the snake and check if the snake is dead or not \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1Snake_a8823d662711544059bc4693c6ba39031}{end}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1IDisplayModule}{IDisplay\+Module}} $\ast$ \mbox{\hyperlink{classarcade_1_1Snake_a7e98a196d7bcfa59597c50fc73865fbd}{\+\_\+display}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{Event}} $>$ \mbox{\hyperlink{classarcade_1_1Snake_aebf278520826a89ebd63bd29ada649fc}{\+\_\+events}}
+\item 
+std\+::map$<$ int, std\+::vector$<$ \mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}} $>$ $>$ \mbox{\hyperlink{classarcade_1_1Snake_aabafa95ec094cc5f79029b5a239d2d06}{\+\_\+\+Map}}
+\item 
+int \mbox{\hyperlink{classarcade_1_1Snake_a7259bbc0b6ef57cf37d6017ecf11c8c6}{\+\_\+score}}
+\item 
+int \mbox{\hyperlink{classarcade_1_1Snake_a3d63888653d944ea9af3f2b3a727516f}{\+\_\+high\+Score}} = 0
+\item 
+float \mbox{\hyperlink{classarcade_1_1Snake_a6770c8b19519f3dce4cb8f0ad5a20e80}{\+\_\+speed}} = 1
+\item 
+\mbox{\hyperlink{namespacearcade_a608583b2070905ecc26e957409bb4f93}{Event\+Type}} \mbox{\hyperlink{classarcade_1_1Snake_a96d885f7473b802c90c2b370585002fc}{\+\_\+wait\+Direction}}
+\item 
+\mbox{\hyperlink{namespacearcade_a608583b2070905ecc26e957409bb4f93}{Event\+Type}} \mbox{\hyperlink{classarcade_1_1Snake_add1c5b1735dc0ff3d234059b411e63f7}{\+\_\+direction}}
+\item 
+std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{structarcade_1_1Event}{Event}}, \mbox{\hyperlink{structarcade_1_1Position}{Position}} $>$ $>$ \mbox{\hyperlink{classarcade_1_1Snake_a70f97369f67126ea7578b9fa1f0f4364}{\+\_\+change\+Direction\+List}}
+\item 
+\mbox{\hyperlink{structarcade_1_1Position}{Position}} \mbox{\hyperlink{classarcade_1_1Snake_a99d4333cfb213452ad4c2b82c0b211cf}{\+\_\+fruit}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structarcade_1_1Position}{Position}} $>$ \mbox{\hyperlink{classarcade_1_1Snake_a4554a50db2b5ad3c0ad04d59cf7c61fc}{\+\_\+snake\+Cara}}
+\item 
+std\+::string \mbox{\hyperlink{classarcade_1_1Snake_a951e0009c83283ac4e451ebb103fbc79}{\+\_\+name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classarcade_1_1Snake_ac2d67bc373332c9c8dc52743efc052ce}\label{classarcade_1_1Snake_ac2d67bc373332c9c8dc52743efc052ce}} 
+\index{arcade::Snake@{arcade::Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}}
+{\footnotesize\ttfamily arcade\+::\+Snake\+::\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classarcade_1_1Snake_ac2d67bc373332c9c8dc52743efc052ce}{arcade\+::\+Snake\+::\+Snake}} object. 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_a93abcd4ea476f99f468371c738500716}\label{classarcade_1_1Snake_a93abcd4ea476f99f468371c738500716}} 
+\index{arcade::Snake@{arcade::Snake}!````~Snake@{$\sim$Snake}}
+\index{````~Snake@{$\sim$Snake}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{$\sim$Snake()}{~Snake()}}
+{\footnotesize\ttfamily arcade\+::\+Snake\+::$\sim$\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classarcade_1_1Snake_ac2d67bc373332c9c8dc52743efc052ce}{arcade\+::\+Snake\+::\+Snake}} object. 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1Snake_a08cb01260be553b50be9fb0249285e27}\label{classarcade_1_1Snake_a08cb01260be553b50be9fb0249285e27}} 
+\index{arcade::Snake@{arcade::Snake}!applyEvent@{applyEvent}}
+\index{applyEvent@{applyEvent}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{applyEvent()}{applyEvent()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::apply\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+parse and aplly \+\_\+events to the game 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_a23100f12950e095f79db427d14037173}\label{classarcade_1_1Snake_a23100f12950e095f79db427d14037173}} 
+\index{arcade::Snake@{arcade::Snake}!changeDirection@{changeDirection}}
+\index{changeDirection@{changeDirection}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{changeDirection()}{changeDirection()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::change\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+change snake direction and move it 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_a2af97038850698bb96e046a20239f815}\label{classarcade_1_1Snake_a2af97038850698bb96e046a20239f815}} 
+\index{arcade::Snake@{arcade::Snake}!deathCondition@{deathCondition}}
+\index{deathCondition@{deathCondition}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{deathCondition()}{deathCondition()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::death\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a8823d662711544059bc4693c6ba39031}\label{classarcade_1_1Snake_a8823d662711544059bc4693c6ba39031}} 
+\index{arcade::Snake@{arcade::Snake}!end@{end}}
+\index{end@{end}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a7d9e21ec4ad4ab1995794572ca0b21d2}\label{classarcade_1_1Snake_a7d9e21ec4ad4ab1995794572ca0b21d2}} 
+\index{arcade::Snake@{arcade::Snake}!gamePause@{gamePause}}
+\index{gamePause@{gamePause}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{gamePause()}{gamePause()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::game\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+pause the game and wait for a pause event to resume the game 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_a523f32b860b6cba6511c7577885a8622}\label{classarcade_1_1Snake_a523f32b860b6cba6511c7577885a8622}} 
+\index{arcade::Snake@{arcade::Snake}!getName@{getName}}
+\index{getName@{getName}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string arcade\+::\+Snake\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+the function which return the name, Duuuhh$\sim$ 
+
+Implements \mbox{\hyperlink{classarcade_1_1IGameModule_aa4f59a478566e670797b7d8dbdcee11b}{arcade\+::\+IGame\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a1437c46c2fd5cb4bed0e34ea2ec8be5f}\label{classarcade_1_1Snake_a1437c46c2fd5cb4bed0e34ea2ec8be5f}} 
+\index{arcade::Snake@{arcade::Snake}!moveCorps@{moveCorps}}
+\index{moveCorps@{moveCorps}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{moveCorps()}{moveCorps()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::move\+Corps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+move the snake\textquotesingle{}s body to the head position 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_ac007a82d10acb894a7ee840aefebf7c3}\label{classarcade_1_1Snake_ac007a82d10acb894a7ee840aefebf7c3}} 
+\index{arcade::Snake@{arcade::Snake}!moveSnake@{moveSnake}}
+\index{moveSnake@{moveSnake}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{moveSnake()}{moveSnake()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::move\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+call all move function to move the snake and check if the snake is dead or not 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_a28dd20ebbb7f56d52e76aa4e68b7268c}\label{classarcade_1_1Snake_a28dd20ebbb7f56d52e76aa4e68b7268c}} 
+\index{arcade::Snake@{arcade::Snake}!printFruit@{printFruit}}
+\index{printFruit@{printFruit}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{printFruit()}{printFruit()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::print\+Fruit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+print the fruit on the map 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_ae9d9ca36be933f0b9fa1c32e9973efa7}\label{classarcade_1_1Snake_ae9d9ca36be933f0b9fa1c32e9973efa7}} 
+\index{arcade::Snake@{arcade::Snake}!printHighScore@{printHighScore}}
+\index{printHighScore@{printHighScore}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{printHighScore()}{printHighScore()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::print\+High\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a4d55283284ea6469f5306169b0061045}\label{classarcade_1_1Snake_a4d55283284ea6469f5306169b0061045}} 
+\index{arcade::Snake@{arcade::Snake}!printMap@{printMap}}
+\index{printMap@{printMap}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{printMap()}{printMap()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::print\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+print \+\_\+\+Map 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_a66d08a88430a0e1b4e3dffa62c602334}\label{classarcade_1_1Snake_a66d08a88430a0e1b4e3dffa62c602334}} 
+\index{arcade::Snake@{arcade::Snake}!printScoreAndName@{printScoreAndName}}
+\index{printScoreAndName@{printScoreAndName}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{printScoreAndName()}{printScoreAndName()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::print\+Score\+And\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a2bddf9b1cc96c4fff9bc6edaf49ac176}\label{classarcade_1_1Snake_a2bddf9b1cc96c4fff9bc6edaf49ac176}} 
+\index{arcade::Snake@{arcade::Snake}!printSnake@{printSnake}}
+\index{printSnake@{printSnake}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{printSnake()}{printSnake()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::print\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+print \+\_\+snake\+Cara 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_a08696a800d7166426d9d0fee14b7a3e3}\label{classarcade_1_1Snake_a08696a800d7166426d9d0fee14b7a3e3}} 
+\index{arcade::Snake@{arcade::Snake}!setNewFruit@{setNewFruit}}
+\index{setNewFruit@{setNewFruit}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{setNewFruit()}{setNewFruit()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::set\+New\+Fruit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set new position for the fruit 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_a1986d46a220f897e126c5b3db1ec1d4e}\label{classarcade_1_1Snake_a1986d46a220f897e126c5b3db1ec1d4e}} 
+\index{arcade::Snake@{arcade::Snake}!snakeEatFruit@{snakeEatFruit}}
+\index{snakeEatFruit@{snakeEatFruit}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{snakeEatFruit()}{snakeEatFruit()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::snake\+Eat\+Fruit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if the snake eat the fruit and if yes, add a new block to the snake\textquotesingle{}s body and set a new fruit position 
+
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1Snake_ae0339891746dbe0c66dec4c7de9b835c}\label{classarcade_1_1Snake_ae0339891746dbe0c66dec4c7de9b835c}} 
+\index{arcade::Snake@{arcade::Snake}!start@{start}}
+\index{start@{start}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1ICore}{ICore}} \&}]{core }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+the function that start the game 
+
+Implements \mbox{\hyperlink{classarcade_1_1IGameModule_a325bd1aec52bafc1ea4c2a6d65f2926a}{arcade\+::\+IGame\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a45eb7be680fb6ba2246d112216ef1867}\label{classarcade_1_1Snake_a45eb7be680fb6ba2246d112216ef1867}} 
+\index{arcade::Snake@{arcade::Snake}!tick@{tick}}
+\index{tick@{tick}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void arcade\+::\+Snake\+::tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1IDisplayModule}{IDisplay\+Module}} \&}]{display\+Module,  }\item[{const std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{Event}} $>$ \&}]{events }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+fonction called by the core to start the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+display} & the display module \\
+\hline
+{\em list} & of events \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Pier-\/\+Alexendre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IGameModule_a181b5da04bacdd18d247ba5c46233b20}{arcade\+::\+IGame\+Module}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classarcade_1_1Snake_a70f97369f67126ea7578b9fa1f0f4364}\label{classarcade_1_1Snake_a70f97369f67126ea7578b9fa1f0f4364}} 
+\index{arcade::Snake@{arcade::Snake}!\_changeDirectionList@{\_changeDirectionList}}
+\index{\_changeDirectionList@{\_changeDirectionList}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_changeDirectionList}{\_changeDirectionList}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$\mbox{\hyperlink{structarcade_1_1Event}{Event}}, \mbox{\hyperlink{structarcade_1_1Position}{Position}}$>$ $>$ arcade\+::\+Snake\+::\+\_\+change\+Direction\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_add1c5b1735dc0ff3d234059b411e63f7}\label{classarcade_1_1Snake_add1c5b1735dc0ff3d234059b411e63f7}} 
+\index{arcade::Snake@{arcade::Snake}!\_direction@{\_direction}}
+\index{\_direction@{\_direction}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_direction}{\_direction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacearcade_a608583b2070905ecc26e957409bb4f93}{Event\+Type}} arcade\+::\+Snake\+::\+\_\+direction\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a7e98a196d7bcfa59597c50fc73865fbd}\label{classarcade_1_1Snake_a7e98a196d7bcfa59597c50fc73865fbd}} 
+\index{arcade::Snake@{arcade::Snake}!\_display@{\_display}}
+\index{\_display@{\_display}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_display}{\_display}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1IDisplayModule}{IDisplay\+Module}}$\ast$ arcade\+::\+Snake\+::\+\_\+display\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_aebf278520826a89ebd63bd29ada649fc}\label{classarcade_1_1Snake_aebf278520826a89ebd63bd29ada649fc}} 
+\index{arcade::Snake@{arcade::Snake}!\_events@{\_events}}
+\index{\_events@{\_events}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_events}{\_events}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{structarcade_1_1Event}{Event}}$>$ arcade\+::\+Snake\+::\+\_\+events\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a99d4333cfb213452ad4c2b82c0b211cf}\label{classarcade_1_1Snake_a99d4333cfb213452ad4c2b82c0b211cf}} 
+\index{arcade::Snake@{arcade::Snake}!\_fruit@{\_fruit}}
+\index{\_fruit@{\_fruit}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_fruit}{\_fruit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structarcade_1_1Position}{Position}} arcade\+::\+Snake\+::\+\_\+fruit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a3d63888653d944ea9af3f2b3a727516f}\label{classarcade_1_1Snake_a3d63888653d944ea9af3f2b3a727516f}} 
+\index{arcade::Snake@{arcade::Snake}!\_highScore@{\_highScore}}
+\index{\_highScore@{\_highScore}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_highScore}{\_highScore}}
+{\footnotesize\ttfamily int arcade\+::\+Snake\+::\+\_\+high\+Score = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_aabafa95ec094cc5f79029b5a239d2d06}\label{classarcade_1_1Snake_aabafa95ec094cc5f79029b5a239d2d06}} 
+\index{arcade::Snake@{arcade::Snake}!\_Map@{\_Map}}
+\index{\_Map@{\_Map}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_Map}{\_Map}}
+{\footnotesize\ttfamily std\+::map$<$int, std\+::vector$<$\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}}$>$ $>$ arcade\+::\+Snake\+::\+\_\+\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a951e0009c83283ac4e451ebb103fbc79}\label{classarcade_1_1Snake_a951e0009c83283ac4e451ebb103fbc79}} 
+\index{arcade::Snake@{arcade::Snake}!\_name@{\_name}}
+\index{\_name@{\_name}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily std\+::string arcade\+::\+Snake\+::\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a7259bbc0b6ef57cf37d6017ecf11c8c6}\label{classarcade_1_1Snake_a7259bbc0b6ef57cf37d6017ecf11c8c6}} 
+\index{arcade::Snake@{arcade::Snake}!\_score@{\_score}}
+\index{\_score@{\_score}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_score}{\_score}}
+{\footnotesize\ttfamily int arcade\+::\+Snake\+::\+\_\+score\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a4554a50db2b5ad3c0ad04d59cf7c61fc}\label{classarcade_1_1Snake_a4554a50db2b5ad3c0ad04d59cf7c61fc}} 
+\index{arcade::Snake@{arcade::Snake}!\_snakeCara@{\_snakeCara}}
+\index{\_snakeCara@{\_snakeCara}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_snakeCara}{\_snakeCara}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structarcade_1_1Position}{Position}}$>$ arcade\+::\+Snake\+::\+\_\+snake\+Cara\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a6770c8b19519f3dce4cb8f0ad5a20e80}\label{classarcade_1_1Snake_a6770c8b19519f3dce4cb8f0ad5a20e80}} 
+\index{arcade::Snake@{arcade::Snake}!\_speed@{\_speed}}
+\index{\_speed@{\_speed}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_speed}{\_speed}}
+{\footnotesize\ttfamily float arcade\+::\+Snake\+::\+\_\+speed = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1Snake_a96d885f7473b802c90c2b370585002fc}\label{classarcade_1_1Snake_a96d885f7473b802c90c2b370585002fc}} 
+\index{arcade::Snake@{arcade::Snake}!\_waitDirection@{\_waitDirection}}
+\index{\_waitDirection@{\_waitDirection}!arcade::Snake@{arcade::Snake}}
+\doxysubsubsection{\texorpdfstring{\_waitDirection}{\_waitDirection}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacearcade_a608583b2070905ecc26e957409bb4f93}{Event\+Type}} arcade\+::\+Snake\+::\+\_\+wait\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Lgame/snake/\mbox{\hyperlink{snake_8hpp}{snake.\+hpp}}\item 
+src/\+Lgame/snake/\mbox{\hyperlink{snake_8cpp}{snake.\+cpp}}\end{DoxyCompactItemize}

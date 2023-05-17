@@ -1,0 +1,65 @@
+\hypertarget{core_8cpp}{}\doxysection{src/core/core.cpp File Reference}
+\label{core_8cpp}\index{src/core/core.cpp@{src/core/core.cpp}}
+{\ttfamily \#include \char`\"{}core.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../errors/errors.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacearcade}{arcade}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+enum lib\+Change \mbox{\hyperlink{namespacearcade_a867bb6276b356595097e27727a6f5b6a}{arcade\+::check\+Lib\+Change}} (const std\+::list$<$ Event $>$ \&events)
+\begin{DoxyCompactList}\small\item\em check if the lib has to change \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacearcade_a068c90e03db182cfe1fc34f4705463a5}{arcade\+::game\+Loop}} (Core $\ast$core, IDisplay\+Module $\ast$display\+Module, IGame\+Module $\ast$game\+Module, std\+::vector$<$ std\+::string $>$ games, std\+::vector$<$ std\+::string $>$ displays, std\+::string game\+Name, std\+::string display\+Name)
+\begin{DoxyCompactList}\small\item\em game loop \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacearcade_a926eed97ba54f4a45d080a02fead47a2}{arcade\+::core}} (char $\ast$display\+Module)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classarcade_1_1Core}{Core}} of the program were display and game modules are created,linked and deleted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}{help}} ()
+\begin{DoxyCompactList}\small\item\em display help information \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{core_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Main function of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}\label{core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}} 
+\index{core.cpp@{core.cpp}!help@{help}}
+\index{help@{help}!core.cpp@{core.cpp}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+display help information 
+
+\begin{DoxyAuthor}{Author}
+leo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{core_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{core_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{core.cpp@{core.cpp}!main@{main}}
+\index{main@{main}!core.cpp@{core.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Main function of the program. 
+
+\begin{DoxyAuthor}{Author}
+Evan 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

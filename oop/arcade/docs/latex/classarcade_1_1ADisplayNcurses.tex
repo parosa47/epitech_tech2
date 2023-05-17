@@ -1,0 +1,301 @@
+\hypertarget{classarcade_1_1ADisplayNcurses}{}\doxysection{arcade\+::ADisplay\+Ncurses Class Reference}
+\label{classarcade_1_1ADisplayNcurses}\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+
+
+{\ttfamily \#include $<$ADisplay\+Ncurses.\+hpp$>$}
+
+Inheritance diagram for arcade\+::ADisplay\+Ncurses\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1ADisplayNcurses}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a26c0053ce1b7c56c3d603e4e7956b4b5}{ADisplay\+Ncurses}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new arcade\+::A Display Ncurses\+::A Display Ncurses object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a2790526ec8ab9305ed483291b39a1b9b}{$\sim$\+ADisplay\+Ncurses}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the arcade\+::A Display Ncurses\+::A Display Ncurses object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_ae43c3155660dca9ca1721e314de4df6d}{display\+Block}} (\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}} block\+Type, \mbox{\hyperlink{structarcade_1_1Position}{Position}} pos) override
+\begin{DoxyCompactList}\small\item\em Display a caracter at the position on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_ac109f147efa9046c5f0bd251f68cdf46}{display\+Text}} (const std\+::string \&text, \mbox{\hyperlink{structarcade_1_1Position}{Position}} pos) override
+\begin{DoxyCompactList}\small\item\em Display a text at the position on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a56576c2fe62c1ed521460408dce7cf5c}{clear}} () override
+\begin{DoxyCompactList}\small\item\em clear the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a05350a4241ebec1123834684064caf85}{refresh}} () override
+\begin{DoxyCompactList}\small\item\em refresh the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_ae1e612629b2b2d4188777a9e3d33c8ef}{play\+Sound}} (\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{Sound}} sound) override
+\begin{DoxyCompactList}\small\item\em play a sound \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{Event}} $>$ \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a5eadda2282b03aa6242780dc61b3f960}{poll\+Event}} () override
+\begin{DoxyCompactList}\small\item\em poll the event from the keyboard \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_aa662b86e92886193d9a1ba9f6c04f5da}{set\+Window\+Size}} (\mbox{\hyperlink{structarcade_1_1Position}{Position}} size) override
+\begin{DoxyCompactList}\small\item\em set the window size \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structarcade_1_1Position}{Position}} \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_aeada47355fb9e3b4799196fafa4c30fa}{get\+Window\+Size}} () override
+\begin{DoxyCompactList}\small\item\em get window size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a29ef8d4a30e40ccacdf2f74185dad9f4}{set\+Window\+Title}} (const std\+::string \&title) override
+\begin{DoxyCompactList}\small\item\em set window title \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a6596a049052e31a00456aa3b9aa6c904}{get\+Block\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structarcade_1_1Position}{Position}} \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a261c8f12902a86fc4c6086baec1bdd5d}{\+\_\+window\+Size}}
+\item 
+std\+::string \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a80e5512857d29d78a40fe1f2fa4b6910}{\+\_\+window\+Title}}
+\item 
+int \mbox{\hyperlink{classarcade_1_1ADisplayNcurses_a88001df80b50962a66f476b4974717c9}{\+\_\+block\+Size}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a26c0053ce1b7c56c3d603e4e7956b4b5}\label{classarcade_1_1ADisplayNcurses_a26c0053ce1b7c56c3d603e4e7956b4b5}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!ADisplayNcurses@{ADisplayNcurses}}
+\index{ADisplayNcurses@{ADisplayNcurses}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{ADisplayNcurses()}{ADisplayNcurses()}}
+{\footnotesize\ttfamily arcade\+::\+ADisplay\+Ncurses\+::\+ADisplay\+Ncurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new arcade\+::A Display Ncurses\+::A Display Ncurses object. 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a2790526ec8ab9305ed483291b39a1b9b}\label{classarcade_1_1ADisplayNcurses_a2790526ec8ab9305ed483291b39a1b9b}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!````~ADisplayNcurses@{$\sim$ADisplayNcurses}}
+\index{````~ADisplayNcurses@{$\sim$ADisplayNcurses}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{$\sim$ADisplayNcurses()}{~ADisplayNcurses()}}
+{\footnotesize\ttfamily arcade\+::\+ADisplay\+Ncurses\+::$\sim$\+ADisplay\+Ncurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destroy the arcade\+::A Display Ncurses\+::A Display Ncurses object. 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a56576c2fe62c1ed521460408dce7cf5c}\label{classarcade_1_1ADisplayNcurses_a56576c2fe62c1ed521460408dce7cf5c}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!clear@{clear}}
+\index{clear@{clear}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Ncurses\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear the screen 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a1d4538558d9fd5237fb91604e1b7d692}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_ae43c3155660dca9ca1721e314de4df6d}\label{classarcade_1_1ADisplayNcurses_ae43c3155660dca9ca1721e314de4df6d}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!displayBlock@{displayBlock}}
+\index{displayBlock@{displayBlock}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{displayBlock()}{displayBlock()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Ncurses\+::display\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}}}]{block\+Type,  }\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display a caracter at the position on the screen. 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em block\+Type} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a4977e9d3269f643097dc7541b14efd9d}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_ac109f147efa9046c5f0bd251f68cdf46}\label{classarcade_1_1ADisplayNcurses_ac109f147efa9046c5f0bd251f68cdf46}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!displayText@{displayText}}
+\index{displayText@{displayText}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{displayText()}{displayText()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Ncurses\+::display\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display a text at the position on the screen. 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af71e4823004b5eeb9cfe69fc22cfeaae}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a6596a049052e31a00456aa3b9aa6c904}\label{classarcade_1_1ADisplayNcurses_a6596a049052e31a00456aa3b9aa6c904}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!getBlockSize@{getBlockSize}}
+\index{getBlockSize@{getBlockSize}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{getBlockSize()}{getBlockSize()}}
+{\footnotesize\ttfamily int arcade\+::\+ADisplay\+Ncurses\+::get\+Block\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_aeada47355fb9e3b4799196fafa4c30fa}\label{classarcade_1_1ADisplayNcurses_aeada47355fb9e3b4799196fafa4c30fa}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} arcade\+::\+ADisplay\+Ncurses\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get window size 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_aeb7fe1773855a8d8d1ebd063a4758f64}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_ae1e612629b2b2d4188777a9e3d33c8ef}\label{classarcade_1_1ADisplayNcurses_ae1e612629b2b2d4188777a9e3d33c8ef}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!playSound@{playSound}}
+\index{playSound@{playSound}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Ncurses\+::play\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+play a sound 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a58c6cd5ff24c19af166395de4ad7a52a}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a5eadda2282b03aa6242780dc61b3f960}\label{classarcade_1_1ADisplayNcurses_a5eadda2282b03aa6242780dc61b3f960}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!pollEvent@{pollEvent}}
+\index{pollEvent@{pollEvent}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{pollEvent()}{pollEvent()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{arcade\+::\+Event}} $>$ arcade\+::\+ADisplay\+Ncurses\+::poll\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+poll the event from the keyboard 
+
+\begin{DoxyReturn}{Returns}
+std\+::list$<$arcade\+::\+Event$>$ 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_acb4657aca3a807b4cbba707fd5ba656e}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a05350a4241ebec1123834684064caf85}\label{classarcade_1_1ADisplayNcurses_a05350a4241ebec1123834684064caf85}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!refresh@{refresh}}
+\index{refresh@{refresh}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Ncurses\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+refresh the screen 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af724ff4cdee60787cc30475a06f8b9e6}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_aa662b86e92886193d9a1ba9f6c04f5da}\label{classarcade_1_1ADisplayNcurses_aa662b86e92886193d9a1ba9f6c04f5da}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!setWindowSize@{setWindowSize}}
+\index{setWindowSize@{setWindowSize}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{setWindowSize()}{setWindowSize()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Ncurses\+::set\+Window\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set the window size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af50661bdc3546d41bc5323857b2b1d51}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a29ef8d4a30e40ccacdf2f74185dad9f4}\label{classarcade_1_1ADisplayNcurses_a29ef8d4a30e40ccacdf2f74185dad9f4}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!setWindowTitle@{setWindowTitle}}
+\index{setWindowTitle@{setWindowTitle}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{setWindowTitle()}{setWindowTitle()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Ncurses\+::set\+Window\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set window title 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & \&title \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a031086aa802c05fbef922254f5f1e969}{arcade\+::\+IDisplay\+Module}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a88001df80b50962a66f476b4974717c9}\label{classarcade_1_1ADisplayNcurses_a88001df80b50962a66f476b4974717c9}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!\_blockSize@{\_blockSize}}
+\index{\_blockSize@{\_blockSize}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{\_blockSize}{\_blockSize}}
+{\footnotesize\ttfamily int arcade\+::\+ADisplay\+Ncurses\+::\+\_\+block\+Size = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a261c8f12902a86fc4c6086baec1bdd5d}\label{classarcade_1_1ADisplayNcurses_a261c8f12902a86fc4c6086baec1bdd5d}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!\_windowSize@{\_windowSize}}
+\index{\_windowSize@{\_windowSize}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{\_windowSize}{\_windowSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structarcade_1_1Position}{Position}} arcade\+::\+ADisplay\+Ncurses\+::\+\_\+window\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplayNcurses_a80e5512857d29d78a40fe1f2fa4b6910}\label{classarcade_1_1ADisplayNcurses_a80e5512857d29d78a40fe1f2fa4b6910}} 
+\index{arcade::ADisplayNcurses@{arcade::ADisplayNcurses}!\_windowTitle@{\_windowTitle}}
+\index{\_windowTitle@{\_windowTitle}!arcade::ADisplayNcurses@{arcade::ADisplayNcurses}}
+\doxysubsubsection{\texorpdfstring{\_windowTitle}{\_windowTitle}}
+{\footnotesize\ttfamily std\+::string arcade\+::\+ADisplay\+Ncurses\+::\+\_\+window\+Title\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Ldisplay/ncurses/\mbox{\hyperlink{ADisplayNcurses_8hpp}{ADisplay\+Ncurses.\+hpp}}\item 
+src/\+Ldisplay/ncurses/\mbox{\hyperlink{ADisplayNcurses_8cpp}{ADisplay\+Ncurses.\+cpp}}\end{DoxyCompactItemize}

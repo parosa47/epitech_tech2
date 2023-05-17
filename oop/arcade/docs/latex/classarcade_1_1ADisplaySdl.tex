@@ -1,0 +1,389 @@
+\hypertarget{classarcade_1_1ADisplaySdl}{}\doxysection{arcade\+::ADisplay\+Sdl Class Reference}
+\label{classarcade_1_1ADisplaySdl}\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+
+
+{\ttfamily \#include $<$ADisplay\+Sdl.\+hpp$>$}
+
+Inheritance diagram for arcade\+::ADisplay\+Sdl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1ADisplaySdl}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1ADisplaySdl_a1467a2d854c667cdccdd5f285b66b225}{ADisplay\+Sdl}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new arcade\+::A Display Sdl\+::A Display Sdl object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1ADisplaySdl_a2cdae381b14a34a92c03c42d1394657c}{$\sim$\+ADisplay\+Sdl}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the arcade\+::A Display Sdl\+::A Display Sdl object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySdl_aa8c59dde553872616f186663468705b6}{display\+Block}} (\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}} block\+Type, \mbox{\hyperlink{structarcade_1_1Position}{Position}} pos) override
+\begin{DoxyCompactList}\small\item\em display a block of 32 pixel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a701186dd2d48f472c7806ee9cd6cccb7}{display\+Text}} (const std\+::string \&text, \mbox{\hyperlink{structarcade_1_1Position}{Position}} pos) override
+\begin{DoxyCompactList}\small\item\em display text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a46c808edf403739cda28d2476eb9a6a1}{clear}} () override
+\begin{DoxyCompactList}\small\item\em clear the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a0d9773e3fb134b2527b401185674d626}{refresh}} () override
+\begin{DoxyCompactList}\small\item\em refresh the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySdl_abbd95053c1df1b840df7b2b2f8c021f3}{close}} ()
+\begin{DoxyCompactList}\small\item\em close the window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySdl_af695605cfe019725fa12a6b547436c7e}{play\+Sound}} (\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{Sound}} sound) override
+\begin{DoxyCompactList}\small\item\em play a sound \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{Event}} $>$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_ae159c14eb7383ccac1e4de819cf2bca4}{poll\+Event}} () override
+\begin{DoxyCompactList}\small\item\em poll the event from the keyboard \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a605a3665e67e91d5de02bfb6dedc44b8}{set\+Window\+Size}} (\mbox{\hyperlink{structarcade_1_1Position}{Position}} size) override
+\begin{DoxyCompactList}\small\item\em set the window size \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structarcade_1_1Position}{Position}} \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a716491c3de03adeeecbdb20dbe92d93c}{get\+Window\+Size}} () override
+\begin{DoxyCompactList}\small\item\em get window size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a0d3354daa1861af9815b3f7e0540443c}{set\+Window\+Title}} (const std\+::string \&title) override
+\begin{DoxyCompactList}\small\item\em set window title \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a92735731652f8b6f6ea6865a1cca0858}{get\+Block\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a0ec0cd9a6b226b1da1e24d084e52ad5f}{\+\_\+renderer}}
+\item 
+SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a4b920a0c4219b735008349f4196d271b}{\+\_\+window}}
+\item 
+Mix\+\_\+\+Chunk $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a8c260a8f607769ad68b9c8c51fe1b199}{\+\_\+\+Coin\+Buffer}}
+\item 
+Mix\+\_\+\+Chunk $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a7a1de729990cc2e62b453d1ccd332dbf}{\+\_\+hurt\+Buffer}}
+\item 
+Mix\+\_\+\+Chunk $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_abba860c0c8279971a0f8dc90b7ca4b03}{\+\_\+game\+Over\+Buffer}}
+\item 
+Mix\+\_\+\+Chunk $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_ab299801a80a777870d6931fba7d4504d}{\+\_\+start\+Buffer}}
+\item 
+Mix\+\_\+\+Chunk $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a0edc2a310b6997f3dc9d227f07376a77}{\+\_\+super\+Buffer}}
+\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a7f4480fd10375f95f168b11502f71ce4}{\+\_\+sprite\+Sheet}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classarcade_1_1ADisplaySdl_aa0a90af6b21b5df8316eeb2e769c4c7c}{\+\_\+sprite\+Sheet\+Rect}} \mbox{[}5\mbox{]}
+\item 
+int \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a37b5d70cf0a0741640fb7545476cb495}{\+\_\+block\+Size}}
+\item 
+\mbox{\hyperlink{structarcade_1_1Position}{Position}} \mbox{\hyperlink{classarcade_1_1ADisplaySdl_a1eb2923c887549dc49871dbe634edb08}{\+\_\+window\+Size}}
+\item 
+std\+::string \mbox{\hyperlink{classarcade_1_1ADisplaySdl_aff4c86e9a646e7832932a979020023de}{\+\_\+window\+Title}}
+\item 
+TTF\+\_\+\+Font $\ast$ \mbox{\hyperlink{classarcade_1_1ADisplaySdl_acc10d722ff4a688505a54fd8156ed465}{\+\_\+font}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a1467a2d854c667cdccdd5f285b66b225}\label{classarcade_1_1ADisplaySdl_a1467a2d854c667cdccdd5f285b66b225}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!ADisplaySdl@{ADisplaySdl}}
+\index{ADisplaySdl@{ADisplaySdl}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{ADisplaySdl()}{ADisplaySdl()}}
+{\footnotesize\ttfamily arcade\+::\+ADisplay\+Sdl\+::\+ADisplay\+Sdl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new arcade\+::A Display Sdl\+::A Display Sdl object. 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a2cdae381b14a34a92c03c42d1394657c}\label{classarcade_1_1ADisplaySdl_a2cdae381b14a34a92c03c42d1394657c}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!````~ADisplaySdl@{$\sim$ADisplaySdl}}
+\index{````~ADisplaySdl@{$\sim$ADisplaySdl}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{$\sim$ADisplaySdl()}{~ADisplaySdl()}}
+{\footnotesize\ttfamily arcade\+::\+ADisplay\+Sdl\+::$\sim$\+ADisplay\+Sdl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destroy the arcade\+::A Display Sdl\+::A Display Sdl object. 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a46c808edf403739cda28d2476eb9a6a1}\label{classarcade_1_1ADisplaySdl_a46c808edf403739cda28d2476eb9a6a1}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!clear@{clear}}
+\index{clear@{clear}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sdl\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear the screen 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a1d4538558d9fd5237fb91604e1b7d692}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_abbd95053c1df1b840df7b2b2f8c021f3}\label{classarcade_1_1ADisplaySdl_abbd95053c1df1b840df7b2b2f8c021f3}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!close@{close}}
+\index{close@{close}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sdl\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+close the window 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_aa8c59dde553872616f186663468705b6}\label{classarcade_1_1ADisplaySdl_aa8c59dde553872616f186663468705b6}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!displayBlock@{displayBlock}}
+\index{displayBlock@{displayBlock}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{displayBlock()}{displayBlock()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sdl\+::display\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}}}]{block\+Type,  }\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+display a block of 32 pixel 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a4977e9d3269f643097dc7541b14efd9d}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a701186dd2d48f472c7806ee9cd6cccb7}\label{classarcade_1_1ADisplaySdl_a701186dd2d48f472c7806ee9cd6cccb7}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!displayText@{displayText}}
+\index{displayText@{displayText}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{displayText()}{displayText()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sdl\+::display\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+display text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af71e4823004b5eeb9cfe69fc22cfeaae}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a92735731652f8b6f6ea6865a1cca0858}\label{classarcade_1_1ADisplaySdl_a92735731652f8b6f6ea6865a1cca0858}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!getBlockSize@{getBlockSize}}
+\index{getBlockSize@{getBlockSize}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{getBlockSize()}{getBlockSize()}}
+{\footnotesize\ttfamily int arcade\+::\+ADisplay\+Sdl\+::get\+Block\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a716491c3de03adeeecbdb20dbe92d93c}\label{classarcade_1_1ADisplaySdl_a716491c3de03adeeecbdb20dbe92d93c}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} arcade\+::\+ADisplay\+Sdl\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get window size 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_aeb7fe1773855a8d8d1ebd063a4758f64}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_af695605cfe019725fa12a6b547436c7e}\label{classarcade_1_1ADisplaySdl_af695605cfe019725fa12a6b547436c7e}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!playSound@{playSound}}
+\index{playSound@{playSound}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sdl\+::play\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+play a sound 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a58c6cd5ff24c19af166395de4ad7a52a}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_ae159c14eb7383ccac1e4de819cf2bca4}\label{classarcade_1_1ADisplaySdl_ae159c14eb7383ccac1e4de819cf2bca4}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!pollEvent@{pollEvent}}
+\index{pollEvent@{pollEvent}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{pollEvent()}{pollEvent()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{arcade\+::\+Event}} $>$ arcade\+::\+ADisplay\+Sdl\+::poll\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+poll the event from the keyboard 
+
+\begin{DoxyReturn}{Returns}
+std\+::list$<$arcade\+::\+Event$>$ 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_acb4657aca3a807b4cbba707fd5ba656e}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a0d9773e3fb134b2527b401185674d626}\label{classarcade_1_1ADisplaySdl_a0d9773e3fb134b2527b401185674d626}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!refresh@{refresh}}
+\index{refresh@{refresh}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sdl\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+refresh the screen 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af724ff4cdee60787cc30475a06f8b9e6}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a605a3665e67e91d5de02bfb6dedc44b8}\label{classarcade_1_1ADisplaySdl_a605a3665e67e91d5de02bfb6dedc44b8}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!setWindowSize@{setWindowSize}}
+\index{setWindowSize@{setWindowSize}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{setWindowSize()}{setWindowSize()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sdl\+::set\+Window\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set the window size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af50661bdc3546d41bc5323857b2b1d51}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a0d3354daa1861af9815b3f7e0540443c}\label{classarcade_1_1ADisplaySdl_a0d3354daa1861af9815b3f7e0540443c}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!setWindowTitle@{setWindowTitle}}
+\index{setWindowTitle@{setWindowTitle}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{setWindowTitle()}{setWindowTitle()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sdl\+::set\+Window\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set window title 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & \&title \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a031086aa802c05fbef922254f5f1e969}{arcade\+::\+IDisplay\+Module}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a37b5d70cf0a0741640fb7545476cb495}\label{classarcade_1_1ADisplaySdl_a37b5d70cf0a0741640fb7545476cb495}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_blockSize@{\_blockSize}}
+\index{\_blockSize@{\_blockSize}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_blockSize}{\_blockSize}}
+{\footnotesize\ttfamily int arcade\+::\+ADisplay\+Sdl\+::\+\_\+block\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a8c260a8f607769ad68b9c8c51fe1b199}\label{classarcade_1_1ADisplaySdl_a8c260a8f607769ad68b9c8c51fe1b199}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_CoinBuffer@{\_CoinBuffer}}
+\index{\_CoinBuffer@{\_CoinBuffer}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_CoinBuffer}{\_CoinBuffer}}
+{\footnotesize\ttfamily Mix\+\_\+\+Chunk$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+\+Coin\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_acc10d722ff4a688505a54fd8156ed465}\label{classarcade_1_1ADisplaySdl_acc10d722ff4a688505a54fd8156ed465}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_font@{\_font}}
+\index{\_font@{\_font}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_font}{\_font}}
+{\footnotesize\ttfamily TTF\+\_\+\+Font$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_abba860c0c8279971a0f8dc90b7ca4b03}\label{classarcade_1_1ADisplaySdl_abba860c0c8279971a0f8dc90b7ca4b03}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_gameOverBuffer@{\_gameOverBuffer}}
+\index{\_gameOverBuffer@{\_gameOverBuffer}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_gameOverBuffer}{\_gameOverBuffer}}
+{\footnotesize\ttfamily Mix\+\_\+\+Chunk$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+game\+Over\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a7a1de729990cc2e62b453d1ccd332dbf}\label{classarcade_1_1ADisplaySdl_a7a1de729990cc2e62b453d1ccd332dbf}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_hurtBuffer@{\_hurtBuffer}}
+\index{\_hurtBuffer@{\_hurtBuffer}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_hurtBuffer}{\_hurtBuffer}}
+{\footnotesize\ttfamily Mix\+\_\+\+Chunk$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+hurt\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a0ec0cd9a6b226b1da1e24d084e52ad5f}\label{classarcade_1_1ADisplaySdl_a0ec0cd9a6b226b1da1e24d084e52ad5f}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_renderer@{\_renderer}}
+\index{\_renderer@{\_renderer}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_renderer}{\_renderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a7f4480fd10375f95f168b11502f71ce4}\label{classarcade_1_1ADisplaySdl_a7f4480fd10375f95f168b11502f71ce4}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_spriteSheet@{\_spriteSheet}}
+\index{\_spriteSheet@{\_spriteSheet}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_spriteSheet}{\_spriteSheet}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+sprite\+Sheet\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_aa0a90af6b21b5df8316eeb2e769c4c7c}\label{classarcade_1_1ADisplaySdl_aa0a90af6b21b5df8316eeb2e769c4c7c}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_spriteSheetRect@{\_spriteSheetRect}}
+\index{\_spriteSheetRect@{\_spriteSheetRect}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_spriteSheetRect}{\_spriteSheetRect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect arcade\+::\+ADisplay\+Sdl\+::\+\_\+sprite\+Sheet\+Rect\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_ab299801a80a777870d6931fba7d4504d}\label{classarcade_1_1ADisplaySdl_ab299801a80a777870d6931fba7d4504d}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_startBuffer@{\_startBuffer}}
+\index{\_startBuffer@{\_startBuffer}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_startBuffer}{\_startBuffer}}
+{\footnotesize\ttfamily Mix\+\_\+\+Chunk$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+start\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a0edc2a310b6997f3dc9d227f07376a77}\label{classarcade_1_1ADisplaySdl_a0edc2a310b6997f3dc9d227f07376a77}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_superBuffer@{\_superBuffer}}
+\index{\_superBuffer@{\_superBuffer}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_superBuffer}{\_superBuffer}}
+{\footnotesize\ttfamily Mix\+\_\+\+Chunk$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+super\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a4b920a0c4219b735008349f4196d271b}\label{classarcade_1_1ADisplaySdl_a4b920a0c4219b735008349f4196d271b}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_window@{\_window}}
+\index{\_window@{\_window}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window$\ast$ arcade\+::\+ADisplay\+Sdl\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_a1eb2923c887549dc49871dbe634edb08}\label{classarcade_1_1ADisplaySdl_a1eb2923c887549dc49871dbe634edb08}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_windowSize@{\_windowSize}}
+\index{\_windowSize@{\_windowSize}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_windowSize}{\_windowSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structarcade_1_1Position}{Position}} arcade\+::\+ADisplay\+Sdl\+::\+\_\+window\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySdl_aff4c86e9a646e7832932a979020023de}\label{classarcade_1_1ADisplaySdl_aff4c86e9a646e7832932a979020023de}} 
+\index{arcade::ADisplaySdl@{arcade::ADisplaySdl}!\_windowTitle@{\_windowTitle}}
+\index{\_windowTitle@{\_windowTitle}!arcade::ADisplaySdl@{arcade::ADisplaySdl}}
+\doxysubsubsection{\texorpdfstring{\_windowTitle}{\_windowTitle}}
+{\footnotesize\ttfamily std\+::string arcade\+::\+ADisplay\+Sdl\+::\+\_\+window\+Title\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Ldisplay/sdl/\mbox{\hyperlink{ADisplaySdl_8hpp}{ADisplay\+Sdl.\+hpp}}\item 
+src/\+Ldisplay/sdl/\mbox{\hyperlink{ADisplaySdl_8cpp}{ADisplay\+Sdl.\+cpp}}\end{DoxyCompactItemize}

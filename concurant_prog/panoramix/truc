@@ -1,0 +1,172 @@
+sem_t sem_pot;  // Semaphore for the cooking pot
+pthread_mutex_t mutex_pot = PTHREAD_MUTEX_INITIALIZER;  // Mutex for the cooking pot
+pthread_mutex_t mutex_villagers = PTHREAD_MUTEX_INITIALIZER;  // Mutex for villagers array
+pthread_mutex_t mutex_druid = PTHREAD_MUTEX_INITIALIZER;  // Mutex for the druid
+pthread_cond_t cond_pot_not_empty = PTHREAD_COND_INITIALIZER;  // Condition variable for pot not empty
+pthread_cond_t cond_pot_not_full = PTHREAD_COND_INITIALIZER;  // Condition variable for pot not full
+pthread_cond_t cond_all_villagers_done = PTHREAD_COND_INITIALIZER;  // Condition variable for all villagers done
+pthread_cond_t cond_druid_refilled = PTHREAD_COND_INITIALIZER;  // Condition variable for druid refilled
+
+int nb_villagers;
+int pot_size;
+int nb_fights;
+int nb_refills;
+int servings_left;
+int refills_left;
+int villagers_done;
+
+void *druid(void *arg)
+{
+    while (refills_left > 0) {
+        // Wait for pot to be empty
+        pthread_mutex_lock(&mutex_pot);
+        while (servings_left > 0) {
+            pthread_cond_wait(&cond_pot_not_empty, &mutex_pot);
+        }
+
+        // Wait for pot to be not full
+        pthread_mutex_lock(&mutex_druid);
+        while (servings_left == pot_size) {
+            pthread_cond_wait(&cond_pot_not_full, &mutex_druid);
+        }
+
+        // Refill pot
+        sem_post(&sem_pot);
+
+        // Print message
+        printf("The druid has refilled the pot (%d/%d).\n", nb_refills - refills_left, nb_refills);
+
+        // Signal villagers
+        pthread_cond_broadcast(&cond_druid_refilled);
+
+        pthread_mutex_unlock(&mutex_druid);
+        pthread_mutex_unlock(&mutex_pot);
+    }
+
+    return NULL;
+}
+
+void *villager(void *arg)
+{
+    long id = (long)arg;
+    int servings_eaten = 0;
+
+    while (servings_eaten < nb_fights) {
+        // Wait for pot to be not empty
+        sem_wait(&sem_pot);
+
+        // Lock mutex
+        pthread_mutex_lock(&mutex_pot);
+
+        // Serve food
+        servings_left--;
+        servings_eaten++;
+
+        // Print message
+        printf("Villager %ld has been served (%d/%d).\n", id, servings_eaten, nb_fights);
+
+        // Unlock mutex
+        pthread_mutex_unlock(&mutex_pot);
+
+        // Signal druid if pot is not full
+        pthread_mutex_lock(&mutex_druid);
+        if (servings_left < pot_size) {
+            pthread_cond_signal(&cond_druid_refilled);
+        }
+        pthread_mutex_unlock(&mutex_druid);
+
+        // Signal if pot is not empty
+        if (servings_left > 0) {
+            pthread_cond_signal(&cond_pot_not_empty);
+        } else {
+            // Wait for druid to refill pot
+            pthread_mutex_lock(&mutex_druid);
+            if (refills_left > 0) {
+                refills_left--;
+                servings_left = pot_size;
+                printf("Villager %ld is refilling the pot (%d/%d).\n", id, refills_left, nb_refills);
+                pthread_cond_signal(&cond_druid_refilled);
+            }
+            pthread_mutex_unlock(&mutex_druid);
+
+            // Signal pot not full
+            pthread_cond_signal(&cond_pot_not_full);
+        }
+    }
+
+    // Update counter
+    pthread_mutex_lock(&mutex_villagers);
+    villagers_done++;
+    if (villagers_done == nb_villagers) {
+        pthread_cond_signal(&cond_all_villagers_done);
+    }
+    pthread_mutex_unlock(&mutex_villagers);
+
+    return NULL;
+}
+
+
+int main(int argc, char **argv) {
+    if (argc != 5) {
+        fprintf(stderr, "USAGE: %s <nb_villagers> <pot_size> <nb_fights> <nb_refills>\n", argv[0]);
+        return 84;
+    }
+
+    // Parse arguments
+    nb_villagers = atoi(argv[1]);
+    pot_size = atoi(argv[2]);
+    nb_fights = atoi(argv[3]);
+    nb_refills = atoi(argv[4]);
+
+    // Check arguments
+    if (nb_villagers <= 0 || pot_size <= 0 || nb_fights <= 0 || nb_refills <= 0) {
+        fprintf(stderr, "Values must be >0.\n");
+        return 84;
+    }
+
+    // Initialize semaphores and variables
+    sem_init(&sem_pot, 0, pot_size);
+    servings_left = pot_size;
+    refills_left = nb_refills;
+    villagers_done = 0;
+
+    // Create villagers threads
+    pthread_t villagers[nb_villagers];
+    for (int i = 0; i < nb_villagers; i++) {
+        pthread_create(&villagers[i], NULL, villager, (void *)(long)i);
+    }
+
+    // Create druid thread
+    pthread_t druid_thread;
+    pthread_create(&druid_thread, NULL, druid, NULL);
+
+    // Wait for villagers to finish
+    pthread_mutex_lock(&mutex_villagers);
+    while (villagers_done < nb_villagers) {
+        pthread_cond_wait(&cond_all_villagers_done, &mutex_villagers);
+    }
+    pthread_mutex_unlock(&mutex_villagers);
+
+    // Wait for druid to finish
+    pthread_mutex_lock(&mutex_druid);
+    while (refills_left > 0) {
+        pthread_cond_wait(&cond_druid_refilled, &mutex_druid);
+    }
+    pthread_mutex_unlock(&mutex_druid);
+
+    // Clean up
+    for (int i = 0; i < nb_villagers; i++) {
+        pthread_join(villagers[i], NULL);
+    }
+    pthread_join(druid_thread, NULL);
+    sem_destroy(&sem_pot);
+    pthread_mutex_destroy(&mutex_pot);
+    pthread_mutex_destroy(&mutex_villagers);
+    pthread_mutex_destroy(&mutex_druid);
+    pthread_cond_destroy(&cond_pot_not_empty);
+    pthread_cond_destroy(&cond_pot_not_full);
+    pthread_cond_destroy(&cond_all_villagers_done);
+    pthread_cond_destroy(&cond_druid_refilled);
+
+    return 0;
+}

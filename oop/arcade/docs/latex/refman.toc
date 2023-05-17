@@ -1,0 +1,301 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Namespace List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}arcade Namespace Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Enumeration Type Documentation}{11}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}BlockType}{11}{subsubsection.5.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.2}changes}{11}{subsubsection.5.1.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.1.3}displayLibs}{12}{subsubsection.5.1.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.1.4}EventType}{12}{subsubsection.5.1.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.1.5}gameLibs}{12}{subsubsection.5.1.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.1.6}libChange}{13}{subsubsection.5.1.1.6}%
+\contentsline {subsubsection}{\numberline {5.1.1.7}Sound}{13}{subsubsection.5.1.1.7}%
+\contentsline {subsection}{\numberline {5.1.2}Function Documentation}{13}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}changePos()}{14}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}chargeAllLibs()}{14}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}checkLibChange()}{14}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}closeAllLibs()}{15}{subsubsection.5.1.2.4}%
+\contentsline {subsubsection}{\numberline {5.1.2.5}core()}{15}{subsubsection.5.1.2.5}%
+\contentsline {subsubsection}{\numberline {5.1.2.6}createDisplayModule()}{16}{subsubsection.5.1.2.6}%
+\contentsline {subsubsection}{\numberline {5.1.2.7}createGameModule()}{16}{subsubsection.5.1.2.7}%
+\contentsline {subsubsection}{\numberline {5.1.2.8}deleteAllModules()}{17}{subsubsection.5.1.2.8}%
+\contentsline {subsubsection}{\numberline {5.1.2.9}displayMenu()}{17}{subsubsection.5.1.2.9}%
+\contentsline {subsubsection}{\numberline {5.1.2.10}fillDisplays()}{18}{subsubsection.5.1.2.10}%
+\contentsline {subsubsection}{\numberline {5.1.2.11}fillGames()}{18}{subsubsection.5.1.2.11}%
+\contentsline {subsubsection}{\numberline {5.1.2.12}findDisplay()}{19}{subsubsection.5.1.2.12}%
+\contentsline {subsubsection}{\numberline {5.1.2.13}findDisplayLib()}{19}{subsubsection.5.1.2.13}%
+\contentsline {subsubsection}{\numberline {5.1.2.14}findGame()}{19}{subsubsection.5.1.2.14}%
+\contentsline {subsubsection}{\numberline {5.1.2.15}gameLoop()}{20}{subsubsection.5.1.2.15}%
+\contentsline {subsubsection}{\numberline {5.1.2.16}getDisplayLibName()}{20}{subsubsection.5.1.2.16}%
+\contentsline {subsubsection}{\numberline {5.1.2.17}getGameLibName()}{21}{subsubsection.5.1.2.17}%
+\contentsline {subsubsection}{\numberline {5.1.2.18}Menu()}{21}{subsubsection.5.1.2.18}%
+\contentsline {subsubsection}{\numberline {5.1.2.19}nextDisplay()}{22}{subsubsection.5.1.2.19}%
+\contentsline {subsubsection}{\numberline {5.1.2.20}nextGame()}{22}{subsubsection.5.1.2.20}%
+\contentsline {subsubsection}{\numberline {5.1.2.21}nextIndex()}{22}{subsubsection.5.1.2.21}%
+\contentsline {subsubsection}{\numberline {5.1.2.22}openLib()}{23}{subsubsection.5.1.2.22}%
+\contentsline {subsubsection}{\numberline {5.1.2.23}previousIndex()}{23}{subsubsection.5.1.2.23}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{25}{chapter.6}%
+\contentsline {section}{\numberline {6.1}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ncurses Class Reference}{25}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Constructor \& Destructor Documentation}{26}{subsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.1}ADisplayNcurses()}{26}{subsubsection.6.1.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.2}$\sim $ADisplayNcurses()}{26}{subsubsection.6.1.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{26}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}clear()}{26}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}displayBlock()}{26}{subsubsection.6.1.2.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.3}displayText()}{27}{subsubsection.6.1.2.3}%
+\contentsline {subsubsection}{\numberline {6.1.2.4}getBlockSize()}{27}{subsubsection.6.1.2.4}%
+\contentsline {subsubsection}{\numberline {6.1.2.5}getWindowSize()}{27}{subsubsection.6.1.2.5}%
+\contentsline {subsubsection}{\numberline {6.1.2.6}playSound()}{28}{subsubsection.6.1.2.6}%
+\contentsline {subsubsection}{\numberline {6.1.2.7}pollEvent()}{28}{subsubsection.6.1.2.7}%
+\contentsline {subsubsection}{\numberline {6.1.2.8}refresh()}{28}{subsubsection.6.1.2.8}%
+\contentsline {subsubsection}{\numberline {6.1.2.9}setWindowSize()}{28}{subsubsection.6.1.2.9}%
+\contentsline {subsubsection}{\numberline {6.1.2.10}setWindowTitle()}{29}{subsubsection.6.1.2.10}%
+\contentsline {subsection}{\numberline {6.1.3}Member Data Documentation}{29}{subsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.3.1}\_blockSize}{29}{subsubsection.6.1.3.1}%
+\contentsline {subsubsection}{\numberline {6.1.3.2}\_windowSize}{29}{subsubsection.6.1.3.2}%
+\contentsline {subsubsection}{\numberline {6.1.3.3}\_windowTitle}{30}{subsubsection.6.1.3.3}%
+\contentsline {section}{\numberline {6.2}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sdl Class Reference}{30}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Constructor \& Destructor Documentation}{31}{subsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}ADisplaySdl()}{31}{subsubsection.6.2.1.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.2}$\sim $ADisplaySdl()}{31}{subsubsection.6.2.1.2}%
+\contentsline {subsection}{\numberline {6.2.2}Member Function Documentation}{31}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}clear()}{32}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}close()}{32}{subsubsection.6.2.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.3}displayBlock()}{32}{subsubsection.6.2.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.2.4}displayText()}{32}{subsubsection.6.2.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.2.5}getBlockSize()}{33}{subsubsection.6.2.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.2.6}getWindowSize()}{33}{subsubsection.6.2.2.6}%
+\contentsline {subsubsection}{\numberline {6.2.2.7}playSound()}{33}{subsubsection.6.2.2.7}%
+\contentsline {subsubsection}{\numberline {6.2.2.8}pollEvent()}{34}{subsubsection.6.2.2.8}%
+\contentsline {subsubsection}{\numberline {6.2.2.9}refresh()}{34}{subsubsection.6.2.2.9}%
+\contentsline {subsubsection}{\numberline {6.2.2.10}setWindowSize()}{34}{subsubsection.6.2.2.10}%
+\contentsline {subsubsection}{\numberline {6.2.2.11}setWindowTitle()}{35}{subsubsection.6.2.2.11}%
+\contentsline {subsection}{\numberline {6.2.3}Member Data Documentation}{35}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}\_blockSize}{35}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}\_CoinBuffer}{35}{subsubsection.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.3.3}\_font}{35}{subsubsection.6.2.3.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.4}\_gameOverBuffer}{36}{subsubsection.6.2.3.4}%
+\contentsline {subsubsection}{\numberline {6.2.3.5}\_hurtBuffer}{36}{subsubsection.6.2.3.5}%
+\contentsline {subsubsection}{\numberline {6.2.3.6}\_renderer}{36}{subsubsection.6.2.3.6}%
+\contentsline {subsubsection}{\numberline {6.2.3.7}\_spriteSheet}{36}{subsubsection.6.2.3.7}%
+\contentsline {subsubsection}{\numberline {6.2.3.8}\_spriteSheetRect}{36}{subsubsection.6.2.3.8}%
+\contentsline {subsubsection}{\numberline {6.2.3.9}\_startBuffer}{36}{subsubsection.6.2.3.9}%
+\contentsline {subsubsection}{\numberline {6.2.3.10}\_superBuffer}{36}{subsubsection.6.2.3.10}%
+\contentsline {subsubsection}{\numberline {6.2.3.11}\_window}{36}{subsubsection.6.2.3.11}%
+\contentsline {subsubsection}{\numberline {6.2.3.12}\_windowSize}{37}{subsubsection.6.2.3.12}%
+\contentsline {subsubsection}{\numberline {6.2.3.13}\_windowTitle}{37}{subsubsection.6.2.3.13}%
+\contentsline {section}{\numberline {6.3}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sfml Class Reference}{37}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Constructor \& Destructor Documentation}{38}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}ADisplaySfml()}{38}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}$\sim $ADisplaySfml()}{38}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {6.3.2}Member Function Documentation}{38}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}clear()}{39}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.2.2}displayBlock()}{39}{subsubsection.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}displayText()}{39}{subsubsection.6.3.2.3}%
+\contentsline {subsubsection}{\numberline {6.3.2.4}getBlockSize()}{40}{subsubsection.6.3.2.4}%
+\contentsline {subsubsection}{\numberline {6.3.2.5}getWindowSize()}{40}{subsubsection.6.3.2.5}%
+\contentsline {subsubsection}{\numberline {6.3.2.6}playSound()}{40}{subsubsection.6.3.2.6}%
+\contentsline {subsubsection}{\numberline {6.3.2.7}pollEvent()}{41}{subsubsection.6.3.2.7}%
+\contentsline {subsubsection}{\numberline {6.3.2.8}refresh()}{41}{subsubsection.6.3.2.8}%
+\contentsline {subsubsection}{\numberline {6.3.2.9}setWindowSize()}{41}{subsubsection.6.3.2.9}%
+\contentsline {subsubsection}{\numberline {6.3.2.10}setWindowTitle()}{42}{subsubsection.6.3.2.10}%
+\contentsline {subsection}{\numberline {6.3.3}Member Data Documentation}{42}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}\_blockSize}{42}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}\_CoinBuffer}{42}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}\_font}{42}{subsubsection.6.3.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.4}\_gameOverBuffer}{42}{subsubsection.6.3.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.3.5}\_hurtBuffer}{43}{subsubsection.6.3.3.5}%
+\contentsline {subsubsection}{\numberline {6.3.3.6}\_startBuffer}{43}{subsubsection.6.3.3.6}%
+\contentsline {subsubsection}{\numberline {6.3.3.7}\_superBuffer}{43}{subsubsection.6.3.3.7}%
+\contentsline {subsubsection}{\numberline {6.3.3.8}\_window}{43}{subsubsection.6.3.3.8}%
+\contentsline {subsubsection}{\numberline {6.3.3.9}\_windowSize}{43}{subsubsection.6.3.3.9}%
+\contentsline {section}{\numberline {6.4}cannot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Close\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Library Class Reference}{43}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Member Function Documentation}{44}{subsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.1.1}what()}{44}{subsubsection.6.4.1.1}%
+\contentsline {section}{\numberline {6.5}cannot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Close\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Module Class Reference}{44}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Member Function Documentation}{44}{subsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.1.1}what()}{44}{subsubsection.6.5.1.1}%
+\contentsline {section}{\numberline {6.6}cannot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Create\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Module Class Reference}{45}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Member Function Documentation}{45}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}what()}{45}{subsubsection.6.6.1.1}%
+\contentsline {section}{\numberline {6.7}cannot\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Open\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Library Class Reference}{45}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Member Function Documentation}{46}{subsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.1.1}what()}{46}{subsubsection.6.7.1.1}%
+\contentsline {section}{\numberline {6.8}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Core Class Reference}{46}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Constructor \& Destructor Documentation}{46}{subsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.1.1}Core()}{47}{subsubsection.6.8.1.1}%
+\contentsline {subsubsection}{\numberline {6.8.1.2}$\sim $Core()}{47}{subsubsection.6.8.1.2}%
+\contentsline {subsection}{\numberline {6.8.2}Member Function Documentation}{47}{subsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}getName()}{47}{subsubsection.6.8.2.1}%
+\contentsline {subsubsection}{\numberline {6.8.2.2}setName()}{47}{subsubsection.6.8.2.2}%
+\contentsline {subsection}{\numberline {6.8.3}Member Data Documentation}{47}{subsection.6.8.3}%
+\contentsline {subsubsection}{\numberline {6.8.3.1}\_displayLibs}{47}{subsubsection.6.8.3.1}%
+\contentsline {subsubsection}{\numberline {6.8.3.2}\_gameLibs}{48}{subsubsection.6.8.3.2}%
+\contentsline {subsubsection}{\numberline {6.8.3.3}\_name}{48}{subsubsection.6.8.3.3}%
+\contentsline {section}{\numberline {6.9}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Event Struct Reference}{48}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{48}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.9.2}Member Data Documentation}{48}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}type}{48}{subsubsection.6.9.2.1}%
+\contentsline {section}{\numberline {6.10}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ICore Class Reference}{49}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Member Function Documentation}{49}{subsection.6.10.1}%
+\contentsline {subsubsection}{\numberline {6.10.1.1}getName()}{49}{subsubsection.6.10.1.1}%
+\contentsline {subsubsection}{\numberline {6.10.1.2}setName()}{49}{subsubsection.6.10.1.2}%
+\contentsline {section}{\numberline {6.11}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IDisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Module Class Reference}{50}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{50}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}Constructor \& Destructor Documentation}{50}{subsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}$\sim $IDisplayModule()}{50}{subsubsection.6.11.2.1}%
+\contentsline {subsection}{\numberline {6.11.3}Member Function Documentation}{50}{subsection.6.11.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.1}clear()}{51}{subsubsection.6.11.3.1}%
+\contentsline {subsubsection}{\numberline {6.11.3.2}displayBlock()}{51}{subsubsection.6.11.3.2}%
+\contentsline {subsubsection}{\numberline {6.11.3.3}displayText()}{51}{subsubsection.6.11.3.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.4}getWindowSize()}{51}{subsubsection.6.11.3.4}%
+\contentsline {subsubsection}{\numberline {6.11.3.5}playSound()}{51}{subsubsection.6.11.3.5}%
+\contentsline {subsubsection}{\numberline {6.11.3.6}pollEvent()}{52}{subsubsection.6.11.3.6}%
+\contentsline {subsubsection}{\numberline {6.11.3.7}refresh()}{52}{subsubsection.6.11.3.7}%
+\contentsline {subsubsection}{\numberline {6.11.3.8}setWindowSize()}{52}{subsubsection.6.11.3.8}%
+\contentsline {subsubsection}{\numberline {6.11.3.9}setWindowTitle()}{52}{subsubsection.6.11.3.9}%
+\contentsline {section}{\numberline {6.12}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IGame\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Module Class Reference}{53}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{53}{subsection.6.12.1}%
+\contentsline {subsection}{\numberline {6.12.2}Constructor \& Destructor Documentation}{53}{subsection.6.12.2}%
+\contentsline {subsubsection}{\numberline {6.12.2.1}$\sim $IGameModule()}{53}{subsubsection.6.12.2.1}%
+\contentsline {subsection}{\numberline {6.12.3}Member Function Documentation}{53}{subsection.6.12.3}%
+\contentsline {subsubsection}{\numberline {6.12.3.1}getName()}{53}{subsubsection.6.12.3.1}%
+\contentsline {subsubsection}{\numberline {6.12.3.2}start()}{54}{subsubsection.6.12.3.2}%
+\contentsline {subsubsection}{\numberline {6.12.3.3}tick()}{54}{subsubsection.6.12.3.3}%
+\contentsline {section}{\numberline {6.13}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Nibbler Class Reference}{54}{section.6.13}%
+\contentsline {subsection}{\numberline {6.13.1}Constructor \& Destructor Documentation}{55}{subsection.6.13.1}%
+\contentsline {subsubsection}{\numberline {6.13.1.1}Nibbler()}{56}{subsubsection.6.13.1.1}%
+\contentsline {subsubsection}{\numberline {6.13.1.2}$\sim $Nibbler()}{56}{subsubsection.6.13.1.2}%
+\contentsline {subsection}{\numberline {6.13.2}Member Function Documentation}{56}{subsection.6.13.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.1}applyEvent()}{56}{subsubsection.6.13.2.1}%
+\contentsline {subsubsection}{\numberline {6.13.2.2}changeDirection()}{56}{subsubsection.6.13.2.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.3}deathCondition()}{56}{subsubsection.6.13.2.3}%
+\contentsline {subsubsection}{\numberline {6.13.2.4}end()}{57}{subsubsection.6.13.2.4}%
+\contentsline {subsubsection}{\numberline {6.13.2.5}gamePause()}{57}{subsubsection.6.13.2.5}%
+\contentsline {subsubsection}{\numberline {6.13.2.6}getName()}{57}{subsubsection.6.13.2.6}%
+\contentsline {subsubsection}{\numberline {6.13.2.7}headSnakeOnSnake()}{57}{subsubsection.6.13.2.7}%
+\contentsline {subsubsection}{\numberline {6.13.2.8}headSnakeOnWall()}{57}{subsubsection.6.13.2.8}%
+\contentsline {subsubsection}{\numberline {6.13.2.9}isFruitOnSnake()}{57}{subsubsection.6.13.2.9}%
+\contentsline {subsubsection}{\numberline {6.13.2.10}moveCorps()}{58}{subsubsection.6.13.2.10}%
+\contentsline {subsubsection}{\numberline {6.13.2.11}moveSnake()}{58}{subsubsection.6.13.2.11}%
+\contentsline {subsubsection}{\numberline {6.13.2.12}placeFruits()}{58}{subsubsection.6.13.2.12}%
+\contentsline {subsubsection}{\numberline {6.13.2.13}printFruit()}{58}{subsubsection.6.13.2.13}%
+\contentsline {subsubsection}{\numberline {6.13.2.14}printHighScore()}{58}{subsubsection.6.13.2.14}%
+\contentsline {subsubsection}{\numberline {6.13.2.15}printMap()}{59}{subsubsection.6.13.2.15}%
+\contentsline {subsubsection}{\numberline {6.13.2.16}printScoreAndName()}{59}{subsubsection.6.13.2.16}%
+\contentsline {subsubsection}{\numberline {6.13.2.17}printSnake()}{59}{subsubsection.6.13.2.17}%
+\contentsline {subsubsection}{\numberline {6.13.2.18}setAllFruits()}{59}{subsubsection.6.13.2.18}%
+\contentsline {subsubsection}{\numberline {6.13.2.19}setMap()}{59}{subsubsection.6.13.2.19}%
+\contentsline {subsubsection}{\numberline {6.13.2.20}setNewFruit()}{60}{subsubsection.6.13.2.20}%
+\contentsline {subsubsection}{\numberline {6.13.2.21}snakeEatFruit()}{60}{subsubsection.6.13.2.21}%
+\contentsline {subsubsection}{\numberline {6.13.2.22}start()}{60}{subsubsection.6.13.2.22}%
+\contentsline {subsubsection}{\numberline {6.13.2.23}tick()}{60}{subsubsection.6.13.2.23}%
+\contentsline {subsubsection}{\numberline {6.13.2.24}verifDown()}{60}{subsubsection.6.13.2.24}%
+\contentsline {subsubsection}{\numberline {6.13.2.25}verifLeft()}{61}{subsubsection.6.13.2.25}%
+\contentsline {subsubsection}{\numberline {6.13.2.26}verifRight()}{61}{subsubsection.6.13.2.26}%
+\contentsline {subsubsection}{\numberline {6.13.2.27}verifUp()}{61}{subsubsection.6.13.2.27}%
+\contentsline {subsection}{\numberline {6.13.3}Member Data Documentation}{61}{subsection.6.13.3}%
+\contentsline {subsubsection}{\numberline {6.13.3.1}\_changeDirectionList}{61}{subsubsection.6.13.3.1}%
+\contentsline {subsubsection}{\numberline {6.13.3.2}\_direction}{61}{subsubsection.6.13.3.2}%
+\contentsline {subsubsection}{\numberline {6.13.3.3}\_display}{61}{subsubsection.6.13.3.3}%
+\contentsline {subsubsection}{\numberline {6.13.3.4}\_events}{62}{subsubsection.6.13.3.4}%
+\contentsline {subsubsection}{\numberline {6.13.3.5}\_fruit}{62}{subsubsection.6.13.3.5}%
+\contentsline {subsubsection}{\numberline {6.13.3.6}\_highScore}{62}{subsubsection.6.13.3.6}%
+\contentsline {subsubsection}{\numberline {6.13.3.7}\_Map}{62}{subsubsection.6.13.3.7}%
+\contentsline {subsubsection}{\numberline {6.13.3.8}\_name}{62}{subsubsection.6.13.3.8}%
+\contentsline {subsubsection}{\numberline {6.13.3.9}\_score}{62}{subsubsection.6.13.3.9}%
+\contentsline {subsubsection}{\numberline {6.13.3.10}\_snakeCara}{62}{subsubsection.6.13.3.10}%
+\contentsline {subsubsection}{\numberline {6.13.3.11}\_speed}{62}{subsubsection.6.13.3.11}%
+\contentsline {subsubsection}{\numberline {6.13.3.12}\_waitDirection}{63}{subsubsection.6.13.3.12}%
+\contentsline {subsubsection}{\numberline {6.13.3.13}\_wall}{63}{subsubsection.6.13.3.13}%
+\contentsline {section}{\numberline {6.14}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Position Struct Reference}{63}{section.6.14}%
+\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{63}{subsection.6.14.1}%
+\contentsline {subsection}{\numberline {6.14.2}Member Data Documentation}{63}{subsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}x}{63}{subsubsection.6.14.2.1}%
+\contentsline {subsubsection}{\numberline {6.14.2.2}y}{63}{subsubsection.6.14.2.2}%
+\contentsline {section}{\numberline {6.15}arcade\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Snake Class Reference}{64}{section.6.15}%
+\contentsline {subsection}{\numberline {6.15.1}Constructor \& Destructor Documentation}{65}{subsection.6.15.1}%
+\contentsline {subsubsection}{\numberline {6.15.1.1}Snake()}{65}{subsubsection.6.15.1.1}%
+\contentsline {subsubsection}{\numberline {6.15.1.2}$\sim $Snake()}{65}{subsubsection.6.15.1.2}%
+\contentsline {subsection}{\numberline {6.15.2}Member Function Documentation}{65}{subsection.6.15.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.1}applyEvent()}{66}{subsubsection.6.15.2.1}%
+\contentsline {subsubsection}{\numberline {6.15.2.2}changeDirection()}{66}{subsubsection.6.15.2.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.3}deathCondition()}{66}{subsubsection.6.15.2.3}%
+\contentsline {subsubsection}{\numberline {6.15.2.4}end()}{66}{subsubsection.6.15.2.4}%
+\contentsline {subsubsection}{\numberline {6.15.2.5}gamePause()}{66}{subsubsection.6.15.2.5}%
+\contentsline {subsubsection}{\numberline {6.15.2.6}getName()}{67}{subsubsection.6.15.2.6}%
+\contentsline {subsubsection}{\numberline {6.15.2.7}moveCorps()}{67}{subsubsection.6.15.2.7}%
+\contentsline {subsubsection}{\numberline {6.15.2.8}moveSnake()}{67}{subsubsection.6.15.2.8}%
+\contentsline {subsubsection}{\numberline {6.15.2.9}printFruit()}{67}{subsubsection.6.15.2.9}%
+\contentsline {subsubsection}{\numberline {6.15.2.10}printHighScore()}{68}{subsubsection.6.15.2.10}%
+\contentsline {subsubsection}{\numberline {6.15.2.11}printMap()}{68}{subsubsection.6.15.2.11}%
+\contentsline {subsubsection}{\numberline {6.15.2.12}printScoreAndName()}{68}{subsubsection.6.15.2.12}%
+\contentsline {subsubsection}{\numberline {6.15.2.13}printSnake()}{68}{subsubsection.6.15.2.13}%
+\contentsline {subsubsection}{\numberline {6.15.2.14}setNewFruit()}{68}{subsubsection.6.15.2.14}%
+\contentsline {subsubsection}{\numberline {6.15.2.15}snakeEatFruit()}{69}{subsubsection.6.15.2.15}%
+\contentsline {subsubsection}{\numberline {6.15.2.16}start()}{69}{subsubsection.6.15.2.16}%
+\contentsline {subsubsection}{\numberline {6.15.2.17}tick()}{69}{subsubsection.6.15.2.17}%
+\contentsline {subsection}{\numberline {6.15.3}Member Data Documentation}{69}{subsection.6.15.3}%
+\contentsline {subsubsection}{\numberline {6.15.3.1}\_changeDirectionList}{70}{subsubsection.6.15.3.1}%
+\contentsline {subsubsection}{\numberline {6.15.3.2}\_direction}{70}{subsubsection.6.15.3.2}%
+\contentsline {subsubsection}{\numberline {6.15.3.3}\_display}{70}{subsubsection.6.15.3.3}%
+\contentsline {subsubsection}{\numberline {6.15.3.4}\_events}{70}{subsubsection.6.15.3.4}%
+\contentsline {subsubsection}{\numberline {6.15.3.5}\_fruit}{70}{subsubsection.6.15.3.5}%
+\contentsline {subsubsection}{\numberline {6.15.3.6}\_highScore}{70}{subsubsection.6.15.3.6}%
+\contentsline {subsubsection}{\numberline {6.15.3.7}\_Map}{70}{subsubsection.6.15.3.7}%
+\contentsline {subsubsection}{\numberline {6.15.3.8}\_name}{70}{subsubsection.6.15.3.8}%
+\contentsline {subsubsection}{\numberline {6.15.3.9}\_score}{71}{subsubsection.6.15.3.9}%
+\contentsline {subsubsection}{\numberline {6.15.3.10}\_snakeCara}{71}{subsubsection.6.15.3.10}%
+\contentsline {subsubsection}{\numberline {6.15.3.11}\_speed}{71}{subsubsection.6.15.3.11}%
+\contentsline {subsubsection}{\numberline {6.15.3.12}\_waitDirection}{71}{subsubsection.6.15.3.12}%
+\contentsline {chapter}{\numberline {7}File Documentation}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}src/core/charge\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lib.cpp File Reference}{73}{section.7.1}%
+\contentsline {section}{\numberline {7.2}src/core/close\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lib.cpp File Reference}{73}{section.7.2}%
+\contentsline {section}{\numberline {7.3}src/core/core.cpp File Reference}{74}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Function Documentation}{74}{subsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.1.1}help()}{74}{subsubsection.7.3.1.1}%
+\contentsline {subsubsection}{\numberline {7.3.1.2}main()}{75}{subsubsection.7.3.1.2}%
+\contentsline {section}{\numberline {7.4}src/core/core.hpp File Reference}{75}{section.7.4}%
+\contentsline {section}{\numberline {7.5}src/core/find\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lib.cpp File Reference}{77}{section.7.5}%
+\contentsline {section}{\numberline {7.6}src/core/init\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lib.cpp File Reference}{77}{section.7.6}%
+\contentsline {section}{\numberline {7.7}src/core/menu.cpp File Reference}{77}{section.7.7}%
+\contentsline {section}{\numberline {7.8}src/errors/errors.hpp File Reference}{78}{section.7.8}%
+\contentsline {section}{\numberline {7.9}src/interfaces/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Event.hpp File Reference}{78}{section.7.9}%
+\contentsline {section}{\numberline {7.10}src/interfaces/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ICore.hpp File Reference}{79}{section.7.10}%
+\contentsline {section}{\numberline {7.11}src/interfaces/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IDisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Module.hpp File Reference}{79}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Function Documentation}{80}{subsection.7.11.1}%
+\contentsline {subsubsection}{\numberline {7.11.1.1}createDisplayModule()}{80}{subsubsection.7.11.1.1}%
+\contentsline {section}{\numberline {7.12}src/interfaces/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IGame\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Module.hpp File Reference}{80}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Function Documentation}{80}{subsection.7.12.1}%
+\contentsline {subsubsection}{\numberline {7.12.1.1}createGameModule()}{80}{subsubsection.7.12.1.1}%
+\contentsline {section}{\numberline {7.13}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ldisplay/ncurses/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ncurses.cpp File Reference}{81}{section.7.13}%
+\contentsline {subsection}{\numberline {7.13.1}Function Documentation}{81}{subsection.7.13.1}%
+\contentsline {subsubsection}{\numberline {7.13.1.1}createDisplayModule()}{81}{subsubsection.7.13.1.1}%
+\contentsline {section}{\numberline {7.14}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ldisplay/ncurses/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ncurses.hpp File Reference}{81}{section.7.14}%
+\contentsline {section}{\numberline {7.15}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ldisplay/sdl/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sdl.cpp File Reference}{81}{section.7.15}%
+\contentsline {subsection}{\numberline {7.15.1}Function Documentation}{82}{subsection.7.15.1}%
+\contentsline {subsubsection}{\numberline {7.15.1.1}createDisplayModule()}{82}{subsubsection.7.15.1.1}%
+\contentsline {section}{\numberline {7.16}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ldisplay/sdl/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sdl.hpp File Reference}{82}{section.7.16}%
+\contentsline {section}{\numberline {7.17}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ldisplay/sfml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sfml.cpp File Reference}{82}{section.7.17}%
+\contentsline {subsection}{\numberline {7.17.1}Function Documentation}{83}{subsection.7.17.1}%
+\contentsline {subsubsection}{\numberline {7.17.1.1}createDisplayModule()}{83}{subsubsection.7.17.1.1}%
+\contentsline {section}{\numberline {7.18}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ldisplay/sfml/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ADisplay\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sfml.hpp File Reference}{83}{section.7.18}%
+\contentsline {section}{\numberline {7.19}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lgame/nibbler/nibbler.cpp File Reference}{83}{section.7.19}%
+\contentsline {subsection}{\numberline {7.19.1}Function Documentation}{83}{subsection.7.19.1}%
+\contentsline {subsubsection}{\numberline {7.19.1.1}addVector()}{84}{subsubsection.7.19.1.1}%
+\contentsline {subsubsection}{\numberline {7.19.1.2}createGameModule()}{84}{subsubsection.7.19.1.2}%
+\contentsline {section}{\numberline {7.20}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lgame/nibbler/nibbler.hpp File Reference}{84}{section.7.20}%
+\contentsline {section}{\numberline {7.21}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lgame/snake/snake.cpp File Reference}{84}{section.7.21}%
+\contentsline {subsection}{\numberline {7.21.1}Function Documentation}{85}{subsection.7.21.1}%
+\contentsline {subsubsection}{\numberline {7.21.1.1}createGameModule()}{85}{subsubsection.7.21.1.1}%
+\contentsline {subsubsection}{\numberline {7.21.1.2}headOnKillBloc()}{85}{subsubsection.7.21.1.2}%
+\contentsline {subsubsection}{\numberline {7.21.1.3}isFruitOnSnake()}{85}{subsubsection.7.21.1.3}%
+\contentsline {section}{\numberline {7.22}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lgame/snake/snake.hpp File Reference}{85}{section.7.22}%
+\contentsline {chapter}{Index}{87}{section*.84}%

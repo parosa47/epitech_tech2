@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+##
+## EPITECH PROJECT, 2023
+## 207demo
+## File description:
+## 207demography.py
+##
+import argparse
+import csv
+import numpy as np
+import sys
+
+def load_data():
+    csv_file = "207demography_data.csv"
+    data = {}
+    with open(csv_file, 'r') as file:
+        csv_reader = csv.reader(file, delimiter=';')
+        header = next(csv_reader)
+        data = {}
+        for row in csv_reader:
+            if row[1] in sys.argv:
+                data[row[0]] = {'year': [], 'population': []}
+                for i in range(2, len(row)):
+                    data[row[0]]['year'].append(int(row[i]))
+                    data[row[0]]['population'].append(float(row[i]))
+    return data
+
+def linear_regression(x, y):
+    a, b = np.polyfit(x, y, 1)
+    return a, b
+
+def correlation_coefficient(x, y):
+    r = np.corrcoef(x, y)[0, 1]
+    return r
+
+def predict_population(a, b, year):
+    y_pred = a * year + b
+    return y_pred
+
+def root_mean_square_error(x, y, a, b):
+    y_pred = a * x + b
+    rmse = np.sqrt(np.mean((y - y_pred) ** 2))
+    return rmse
+
+def inverse_linear_regression(x, y):
+    a_inv, b_inv = np.polyfit(y, x, 1)
+    return a_inv, b_inv
+
+if __name__ == '__main__':
+    # Load data from CSV file
+    data = load_data()
+    # Perform linear regression, calculate correlation coefficient, RMSE and predict population in 2050
+    for country_code, country_data in data.items():
+        x = np.array(country_data['year'])
+        y = np.array(country_data['population'])
+        a, b = linear_regression(x, y)
+        r = correlation_coefficient(x, y)
+        y_pred = predict_population(a, b, 2050)
+        rmse = root_mean_square_error(x, y, a, b)
+        print(f'Country: {country_code}')
+        print(f'Fit1\n\tY = {a:.2f} X + {b:.2f}')
+        print(f'\tRoot-mean-square deviation: {rmse:.2f}')
+        print(f'\tPopulation in 2050: {y_pred:.2f}')
+        a_inv, b_inv = inverse_linear_regression(x, y)
+        x_pred = predict_population(a_inv, b_inv, 2050)
+        rmse_inv = root_mean_square_error(y, x, a_inv, b_inv)
+        print(f'Fit2\n\tX = {a_inv:.2f} Y + {b_inv:.2f}')
+        print(f'\tRoot-mean-square deviation: {rmse_inv:.2f}')
+        print(f'\tPopulation in 2050: {x_pred:.2f}')
+        print(f'Correlation: {r:.4f}\n')

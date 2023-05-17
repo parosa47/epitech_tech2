@@ -1,0 +1,39 @@
+\hypertarget{menu_8cpp}{}\doxysection{src/core/menu.cpp File Reference}
+\label{menu_8cpp}\index{src/core/menu.cpp@{src/core/menu.cpp}}
+{\ttfamily \#include \char`\"{}core.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacearcade}{arcade}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacearcade_aa67b8154b8917f28cdd6db8cc864269b}{arcade\+::changes}} \{ \newline
+\mbox{\hyperlink{namespacearcade_aa67b8154b8917f28cdd6db8cc864269bae666e19086b990a4fa3bee116ba3699f}{arcade\+::\+Left}}
+, \mbox{\hyperlink{namespacearcade_aa67b8154b8917f28cdd6db8cc864269ba0b3a1f3a915362096c487c2a42bbb3ed}{arcade\+::\+Right}}
+, \mbox{\hyperlink{namespacearcade_aa67b8154b8917f28cdd6db8cc864269baba380b35b4187f3fdc93bbd6aafe1937}{arcade\+::\+Up}}
+, \mbox{\hyperlink{namespacearcade_aa67b8154b8917f28cdd6db8cc864269ba9ab0a3a4d6687c6ac15cac776566aba4}{arcade\+::\+Down}}
+, \newline
+\mbox{\hyperlink{namespacearcade_aa67b8154b8917f28cdd6db8cc864269ba558dad49e17654bc7c933f133e022160}{arcade\+::\+None}}
+, \mbox{\hyperlink{namespacearcade_aa67b8154b8917f28cdd6db8cc864269ba6adf97f83acf6453d4a6a4b1070f3754}{arcade\+::\+None}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacearcade_ab5fbb0cf8ed78d47a9bcd008777b6320}{arcade\+::get\+Game\+Lib\+Name}} (enum game\+Libs game\+Lib)
+\begin{DoxyCompactList}\small\item\em Get the Game Lib Name object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacearcade_a31772af72d6b14f001e681066abd29c3}{arcade\+::get\+Display\+Lib\+Name}} (enum display\+Libs display\+Lib)
+\begin{DoxyCompactList}\small\item\em Get the Display Lib Name object. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{namespacearcade_aca0b0b65f40367737b67184888cce9ef}{arcade\+::change\+Pos}} (const std\+::list$<$ Event $>$ \&events, std\+::pair$<$ int, int $>$ pos, std\+::vector$<$ std\+::string $>$ games, std\+::vector$<$ std\+::string $>$ displays)
+\begin{DoxyCompactList}\small\item\em highlight the selected game or library \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{namespacearcade_a3781299a2bc079d75290c79e7465e8a2}{arcade\+::display\+Menu}} (std\+::pair$<$ int, int $>$ pos, std\+::list$<$ Event $>$ events, IDisplay\+Module $\ast$display\+Module, std\+::vector$<$ std\+::string $>$ games, std\+::vector$<$ std\+::string $>$ displays, std\+::string name)
+\begin{DoxyCompactList}\small\item\em display the menu and highlight the selected game or library \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespacearcade_acf2d7a0fb9fa4403cdd2356de1cafc4e}{arcade\+::fill\+Games}} (Core $\ast$core)
+\begin{DoxyCompactList}\small\item\em fill the vector with the games names \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespacearcade_a743f5cbdf526231ccf2dabef37a3d7d5}{arcade\+::fill\+Displays}} (Core $\ast$core)
+\begin{DoxyCompactList}\small\item\em fill the vector with the displays names \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacearcade_a18bc343d20cf25caed6578f18512726e}{arcade\+::\+Menu}} (IDisplay\+Module $\ast$display, Core $\ast$core, std\+::string first\+Display)
+\begin{DoxyCompactList}\small\item\em Print the menu and handle the events. THIS FUNCTION CALL THE GAME LOOP. \end{DoxyCompactList}\end{DoxyCompactItemize}

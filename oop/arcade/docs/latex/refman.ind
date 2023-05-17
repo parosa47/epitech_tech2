@@ -1,0 +1,794 @@
+\begin{theindex}
+
+  \item {\_CoinBuffer}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{35}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{42}
+  \item {\_Map}
+    \subitem {arcade::Nibbler}, \hyperpage{62}
+    \subitem {arcade::Snake}, \hyperpage{70}
+  \item {\_blockSize}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{29}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{35}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{42}
+  \item {\_changeDirectionList}
+    \subitem {arcade::Nibbler}, \hyperpage{61}
+    \subitem {arcade::Snake}, \hyperpage{69}
+  \item {\_direction}
+    \subitem {arcade::Nibbler}, \hyperpage{61}
+    \subitem {arcade::Snake}, \hyperpage{70}
+  \item {\_display}
+    \subitem {arcade::Nibbler}, \hyperpage{61}
+    \subitem {arcade::Snake}, \hyperpage{70}
+  \item {\_displayLibs}
+    \subitem {arcade::Core}, \hyperpage{47}
+  \item {\_events}
+    \subitem {arcade::Nibbler}, \hyperpage{61}
+    \subitem {arcade::Snake}, \hyperpage{70}
+  \item {\_font}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{35}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{42}
+  \item {\_fruit}
+    \subitem {arcade::Nibbler}, \hyperpage{62}
+    \subitem {arcade::Snake}, \hyperpage{70}
+  \item {\_gameLibs}
+    \subitem {arcade::Core}, \hyperpage{47}
+  \item {\_gameOverBuffer}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{35}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{42}
+  \item {\_highScore}
+    \subitem {arcade::Nibbler}, \hyperpage{62}
+    \subitem {arcade::Snake}, \hyperpage{70}
+  \item {\_hurtBuffer}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{36}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{42}
+  \item {\_name}
+    \subitem {arcade::Core}, \hyperpage{48}
+    \subitem {arcade::Nibbler}, \hyperpage{62}
+    \subitem {arcade::Snake}, \hyperpage{70}
+  \item {\_renderer}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{36}
+  \item {\_score}
+    \subitem {arcade::Nibbler}, \hyperpage{62}
+    \subitem {arcade::Snake}, \hyperpage{70}
+  \item {\_snakeCara}
+    \subitem {arcade::Nibbler}, \hyperpage{62}
+    \subitem {arcade::Snake}, \hyperpage{71}
+  \item {\_speed}
+    \subitem {arcade::Nibbler}, \hyperpage{62}
+    \subitem {arcade::Snake}, \hyperpage{71}
+  \item {\_spriteSheet}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{36}
+  \item {\_spriteSheetRect}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{36}
+  \item {\_startBuffer}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{36}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{43}
+  \item {\_superBuffer}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{36}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{43}
+  \item {\_waitDirection}
+    \subitem {arcade::Nibbler}, \hyperpage{62}
+    \subitem {arcade::Snake}, \hyperpage{71}
+  \item {\_wall}
+    \subitem {arcade::Nibbler}, \hyperpage{63}
+  \item {\_window}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{36}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{43}
+  \item {\_windowSize}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{29}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{36}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{43}
+  \item {\_windowTitle}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{29}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{37}
+  \item {$\sim$ADisplayNcurses}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{26}
+  \item {$\sim$ADisplaySdl}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{31}
+  \item {$\sim$ADisplaySfml}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{38}
+  \item {$\sim$Core}
+    \subitem {arcade::Core}, \hyperpage{47}
+  \item {$\sim$IDisplayModule}
+    \subitem {arcade::IDisplayModule}, \hyperpage{50}
+  \item {$\sim$IGameModule}
+    \subitem {arcade::IGameModule}, \hyperpage{53}
+  \item {$\sim$Nibbler}
+    \subitem {arcade::Nibbler}, \hyperpage{56}
+  \item {$\sim$Snake}
+    \subitem {arcade::Snake}, \hyperpage{65}
+
+  \indexspace
+
+  \item {Aalib}
+    \subitem {arcade}, \hyperpage{12}
+  \item {Action}
+    \subitem {arcade}, \hyperpage{12}
+  \item {addVector}
+    \subitem {nibbler.cpp}, \hyperpage{83}
+  \item {ADisplayNcurses}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{26}
+  \item {ADisplayNcurses.cpp}
+    \subitem {createDisplayModule}, \hyperpage{81}
+  \item {ADisplaySdl}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{31}
+  \item {ADisplaySdl.cpp}
+    \subitem {createDisplayModule}, \hyperpage{82}
+  \item {ADisplaySfml}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{38}
+  \item {ADisplaySfml.cpp}
+    \subitem {createDisplayModule}, \hyperpage{83}
+  \item {Allegro}
+    \subitem {arcade}, \hyperpage{12}
+  \item {applyEvent}
+    \subitem {arcade::Nibbler}, \hyperpage{56}
+    \subitem {arcade::Snake}, \hyperpage{65}
+  \item {arcade}, \hyperpage{9}
+    \subitem {Aalib}, \hyperpage{12}
+    \subitem {Action}, \hyperpage{12}
+    \subitem {Allegro}, \hyperpage{12}
+    \subitem {BlockType}, \hyperpage{11}
+    \subitem {BrickWall}, \hyperpage{11}
+    \subitem {Caca}, \hyperpage{12}
+    \subitem {Centipede}, \hyperpage{13}
+    \subitem {changePos}, \hyperpage{13}
+    \subitem {changes}, \hyperpage{11}
+    \subitem {Character}, \hyperpage{11}
+    \subitem {chargeAllLibs}, \hyperpage{14}
+    \subitem {checkLibChange}, \hyperpage{14}
+    \subitem {closeAllLibs}, \hyperpage{15}
+    \subitem {Coin}, \hyperpage{11}, \hyperpage{13}
+    \subitem {core}, \hyperpage{15}
+    \subitem {createDisplayModule}, \hyperpage{16}
+    \subitem {createGameModule}, \hyperpage{16}
+    \subitem {deleteAllModules}, \hyperpage{17}
+    \subitem {displayLibs}, \hyperpage{11}
+    \subitem {displayMenu}, \hyperpage{17}
+    \subitem {Down}, \hyperpage{11, 12}
+    \subitem {Enemy}, \hyperpage{11}
+    \subitem {EnemyDead}, \hyperpage{11}
+    \subitem {EnemyVulnerable}, \hyperpage{11}
+    \subitem {EventType}, \hyperpage{12}
+    \subitem {fillDisplays}, \hyperpage{18}
+    \subitem {fillGames}, \hyperpage{18}
+    \subitem {findDisplay}, \hyperpage{18}
+    \subitem {findDisplayLib}, \hyperpage{19}
+    \subitem {findGame}, \hyperpage{19}
+    \subitem {Fruit}, \hyperpage{11}
+    \subitem {gameLibs}, \hyperpage{12}
+    \subitem {gameLoop}, \hyperpage{20}
+    \subitem {GameOver}, \hyperpage{13}
+    \subitem {getDisplayLibName}, \hyperpage{20}
+    \subitem {getGameLibName}, \hyperpage{21}
+    \subitem {Grass}, \hyperpage{11}
+    \subitem {Gtk}, \hyperpage{12}
+    \subitem {Hurt}, \hyperpage{13}
+    \subitem {Irrlicht}, \hyperpage{12}
+    \subitem {Left}, \hyperpage{11, 12}
+    \subitem {libChange}, \hyperpage{13}
+    \subitem {Menu}, \hyperpage{21}
+    \subitem {Ncurses}, \hyperpage{12}
+    \subitem {Ndk}, \hyperpage{12}
+    \subitem {nextDisplay}, \hyperpage{22}
+    \subitem {NextGame}, \hyperpage{13}
+    \subitem {nextGame}, \hyperpage{22}
+    \subitem {nextIndex}, \hyperpage{22}
+    \subitem {NextLibrary}, \hyperpage{12, 13}
+    \subitem {Nibbler}, \hyperpage{13}
+    \subitem {None}, \hyperpage{11}, \hyperpage{13}
+    \subitem {OpenGL}, \hyperpage{12}
+    \subitem {openLib}, \hyperpage{23}
+    \subitem {Pacman}, \hyperpage{13}
+    \subitem {Pause}, \hyperpage{12}
+    \subitem {PreviousGame}, \hyperpage{13}
+    \subitem {previousIndex}, \hyperpage{23}
+    \subitem {PreviousLibrary}, \hyperpage{12, 13}
+    \subitem {Qix}, \hyperpage{13}
+    \subitem {Qt5}, \hyperpage{12}
+    \subitem {Quit}, \hyperpage{12, 13}
+    \subitem {Restart}, \hyperpage{13}
+    \subitem {RestartGame}, \hyperpage{12}
+    \subitem {ReturnToSelectionMenu}, \hyperpage{12, 13}
+    \subitem {Right}, \hyperpage{11, 12}
+    \subitem {SDL2}, \hyperpage{12}
+    \subitem {SFML}, \hyperpage{12}
+    \subitem {Snake}, \hyperpage{13}
+    \subitem {Solarfox}, \hyperpage{13}
+    \subitem {Sound}, \hyperpage{13}
+    \subitem {Start}, \hyperpage{13}
+    \subitem {Super}, \hyperpage{13}
+    \subitem {SwitchToNextGame}, \hyperpage{12}
+    \subitem {SwitchToPreviousGame}, \hyperpage{12}
+    \subitem {Up}, \hyperpage{11, 12}
+    \subitem {Vulkain}, \hyperpage{12}
+    \subitem {Xlib}, \hyperpage{12}
+  \item {arcade::ADisplayNcurses}, \hyperpage{25}
+    \subitem {\_blockSize}, \hyperpage{29}
+    \subitem {\_windowSize}, \hyperpage{29}
+    \subitem {\_windowTitle}, \hyperpage{29}
+    \subitem {$\sim$ADisplayNcurses}, \hyperpage{26}
+    \subitem {ADisplayNcurses}, \hyperpage{26}
+    \subitem {clear}, \hyperpage{26}
+    \subitem {displayBlock}, \hyperpage{26}
+    \subitem {displayText}, \hyperpage{27}
+    \subitem {getBlockSize}, \hyperpage{27}
+    \subitem {getWindowSize}, \hyperpage{27}
+    \subitem {playSound}, \hyperpage{27}
+    \subitem {pollEvent}, \hyperpage{28}
+    \subitem {refresh}, \hyperpage{28}
+    \subitem {setWindowSize}, \hyperpage{28}
+    \subitem {setWindowTitle}, \hyperpage{29}
+  \item {arcade::ADisplaySdl}, \hyperpage{30}
+    \subitem {\_CoinBuffer}, \hyperpage{35}
+    \subitem {\_blockSize}, \hyperpage{35}
+    \subitem {\_font}, \hyperpage{35}
+    \subitem {\_gameOverBuffer}, \hyperpage{35}
+    \subitem {\_hurtBuffer}, \hyperpage{36}
+    \subitem {\_renderer}, \hyperpage{36}
+    \subitem {\_spriteSheet}, \hyperpage{36}
+    \subitem {\_spriteSheetRect}, \hyperpage{36}
+    \subitem {\_startBuffer}, \hyperpage{36}
+    \subitem {\_superBuffer}, \hyperpage{36}
+    \subitem {\_window}, \hyperpage{36}
+    \subitem {\_windowSize}, \hyperpage{36}
+    \subitem {\_windowTitle}, \hyperpage{37}
+    \subitem {$\sim$ADisplaySdl}, \hyperpage{31}
+    \subitem {ADisplaySdl}, \hyperpage{31}
+    \subitem {clear}, \hyperpage{31}
+    \subitem {close}, \hyperpage{32}
+    \subitem {displayBlock}, \hyperpage{32}
+    \subitem {displayText}, \hyperpage{32}
+    \subitem {getBlockSize}, \hyperpage{33}
+    \subitem {getWindowSize}, \hyperpage{33}
+    \subitem {playSound}, \hyperpage{33}
+    \subitem {pollEvent}, \hyperpage{34}
+    \subitem {refresh}, \hyperpage{34}
+    \subitem {setWindowSize}, \hyperpage{34}
+    \subitem {setWindowTitle}, \hyperpage{35}
+  \item {arcade::ADisplaySfml}, \hyperpage{37}
+    \subitem {\_CoinBuffer}, \hyperpage{42}
+    \subitem {\_blockSize}, \hyperpage{42}
+    \subitem {\_font}, \hyperpage{42}
+    \subitem {\_gameOverBuffer}, \hyperpage{42}
+    \subitem {\_hurtBuffer}, \hyperpage{42}
+    \subitem {\_startBuffer}, \hyperpage{43}
+    \subitem {\_superBuffer}, \hyperpage{43}
+    \subitem {\_window}, \hyperpage{43}
+    \subitem {\_windowSize}, \hyperpage{43}
+    \subitem {$\sim$ADisplaySfml}, \hyperpage{38}
+    \subitem {ADisplaySfml}, \hyperpage{38}
+    \subitem {clear}, \hyperpage{38}
+    \subitem {displayBlock}, \hyperpage{39}
+    \subitem {displayText}, \hyperpage{39}
+    \subitem {getBlockSize}, \hyperpage{40}
+    \subitem {getWindowSize}, \hyperpage{40}
+    \subitem {playSound}, \hyperpage{40}
+    \subitem {pollEvent}, \hyperpage{40}
+    \subitem {refresh}, \hyperpage{41}
+    \subitem {setWindowSize}, \hyperpage{41}
+    \subitem {setWindowTitle}, \hyperpage{41}
+  \item {arcade::Core}, \hyperpage{46}
+    \subitem {\_displayLibs}, \hyperpage{47}
+    \subitem {\_gameLibs}, \hyperpage{47}
+    \subitem {\_name}, \hyperpage{48}
+    \subitem {$\sim$Core}, \hyperpage{47}
+    \subitem {Core}, \hyperpage{46}
+    \subitem {getName}, \hyperpage{47}
+    \subitem {setName}, \hyperpage{47}
+  \item {arcade::Event}, \hyperpage{48}
+    \subitem {type}, \hyperpage{48}
+  \item {arcade::ICore}, \hyperpage{49}
+    \subitem {getName}, \hyperpage{49}
+    \subitem {setName}, \hyperpage{49}
+  \item {arcade::IDisplayModule}, \hyperpage{50}
+    \subitem {$\sim$IDisplayModule}, \hyperpage{50}
+    \subitem {clear}, \hyperpage{50}
+    \subitem {displayBlock}, \hyperpage{51}
+    \subitem {displayText}, \hyperpage{51}
+    \subitem {getWindowSize}, \hyperpage{51}
+    \subitem {playSound}, \hyperpage{51}
+    \subitem {pollEvent}, \hyperpage{51}
+    \subitem {refresh}, \hyperpage{52}
+    \subitem {setWindowSize}, \hyperpage{52}
+    \subitem {setWindowTitle}, \hyperpage{52}
+  \item {arcade::IGameModule}, \hyperpage{53}
+    \subitem {$\sim$IGameModule}, \hyperpage{53}
+    \subitem {getName}, \hyperpage{53}
+    \subitem {start}, \hyperpage{53}
+    \subitem {tick}, \hyperpage{54}
+  \item {arcade::Nibbler}, \hyperpage{54}
+    \subitem {\_Map}, \hyperpage{62}
+    \subitem {\_changeDirectionList}, \hyperpage{61}
+    \subitem {\_direction}, \hyperpage{61}
+    \subitem {\_display}, \hyperpage{61}
+    \subitem {\_events}, \hyperpage{61}
+    \subitem {\_fruit}, \hyperpage{62}
+    \subitem {\_highScore}, \hyperpage{62}
+    \subitem {\_name}, \hyperpage{62}
+    \subitem {\_score}, \hyperpage{62}
+    \subitem {\_snakeCara}, \hyperpage{62}
+    \subitem {\_speed}, \hyperpage{62}
+    \subitem {\_waitDirection}, \hyperpage{62}
+    \subitem {\_wall}, \hyperpage{63}
+    \subitem {$\sim$Nibbler}, \hyperpage{56}
+    \subitem {applyEvent}, \hyperpage{56}
+    \subitem {changeDirection}, \hyperpage{56}
+    \subitem {deathCondition}, \hyperpage{56}
+    \subitem {end}, \hyperpage{56}
+    \subitem {gamePause}, \hyperpage{57}
+    \subitem {getName}, \hyperpage{57}
+    \subitem {headSnakeOnSnake}, \hyperpage{57}
+    \subitem {headSnakeOnWall}, \hyperpage{57}
+    \subitem {isFruitOnSnake}, \hyperpage{57}
+    \subitem {moveCorps}, \hyperpage{57}
+    \subitem {moveSnake}, \hyperpage{58}
+    \subitem {Nibbler}, \hyperpage{55}
+    \subitem {placeFruits}, \hyperpage{58}
+    \subitem {printFruit}, \hyperpage{58}
+    \subitem {printHighScore}, \hyperpage{58}
+    \subitem {printMap}, \hyperpage{58}
+    \subitem {printScoreAndName}, \hyperpage{59}
+    \subitem {printSnake}, \hyperpage{59}
+    \subitem {setAllFruits}, \hyperpage{59}
+    \subitem {setMap}, \hyperpage{59}
+    \subitem {setNewFruit}, \hyperpage{59}
+    \subitem {snakeEatFruit}, \hyperpage{60}
+    \subitem {start}, \hyperpage{60}
+    \subitem {tick}, \hyperpage{60}
+    \subitem {verifDown}, \hyperpage{60}
+    \subitem {verifLeft}, \hyperpage{60}
+    \subitem {verifRight}, \hyperpage{61}
+    \subitem {verifUp}, \hyperpage{61}
+  \item {arcade::Position}, \hyperpage{63}
+    \subitem {x}, \hyperpage{63}
+    \subitem {y}, \hyperpage{63}
+  \item {arcade::Snake}, \hyperpage{64}
+    \subitem {\_Map}, \hyperpage{70}
+    \subitem {\_changeDirectionList}, \hyperpage{69}
+    \subitem {\_direction}, \hyperpage{70}
+    \subitem {\_display}, \hyperpage{70}
+    \subitem {\_events}, \hyperpage{70}
+    \subitem {\_fruit}, \hyperpage{70}
+    \subitem {\_highScore}, \hyperpage{70}
+    \subitem {\_name}, \hyperpage{70}
+    \subitem {\_score}, \hyperpage{70}
+    \subitem {\_snakeCara}, \hyperpage{71}
+    \subitem {\_speed}, \hyperpage{71}
+    \subitem {\_waitDirection}, \hyperpage{71}
+    \subitem {$\sim$Snake}, \hyperpage{65}
+    \subitem {applyEvent}, \hyperpage{65}
+    \subitem {changeDirection}, \hyperpage{66}
+    \subitem {deathCondition}, \hyperpage{66}
+    \subitem {end}, \hyperpage{66}
+    \subitem {gamePause}, \hyperpage{66}
+    \subitem {getName}, \hyperpage{66}
+    \subitem {moveCorps}, \hyperpage{67}
+    \subitem {moveSnake}, \hyperpage{67}
+    \subitem {printFruit}, \hyperpage{67}
+    \subitem {printHighScore}, \hyperpage{67}
+    \subitem {printMap}, \hyperpage{68}
+    \subitem {printScoreAndName}, \hyperpage{68}
+    \subitem {printSnake}, \hyperpage{68}
+    \subitem {setNewFruit}, \hyperpage{68}
+    \subitem {Snake}, \hyperpage{65}
+    \subitem {snakeEatFruit}, \hyperpage{68}
+    \subitem {start}, \hyperpage{69}
+    \subitem {tick}, \hyperpage{69}
+
+  \indexspace
+
+  \item {BlockType}
+    \subitem {arcade}, \hyperpage{11}
+  \item {BrickWall}
+    \subitem {arcade}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Caca}
+    \subitem {arcade}, \hyperpage{12}
+  \item {cannotCloseLibrary}, \hyperpage{43}
+    \subitem {what}, \hyperpage{44}
+  \item {cannotCloseModule}, \hyperpage{44}
+    \subitem {what}, \hyperpage{44}
+  \item {cannotCreateModule}, \hyperpage{45}
+    \subitem {what}, \hyperpage{45}
+  \item {cannotOpenLibrary}, \hyperpage{45}
+    \subitem {what}, \hyperpage{46}
+  \item {Centipede}
+    \subitem {arcade}, \hyperpage{13}
+  \item {changeDirection}
+    \subitem {arcade::Nibbler}, \hyperpage{56}
+    \subitem {arcade::Snake}, \hyperpage{66}
+  \item {changePos}
+    \subitem {arcade}, \hyperpage{13}
+  \item {changes}
+    \subitem {arcade}, \hyperpage{11}
+  \item {Character}
+    \subitem {arcade}, \hyperpage{11}
+  \item {chargeAllLibs}
+    \subitem {arcade}, \hyperpage{14}
+  \item {checkLibChange}
+    \subitem {arcade}, \hyperpage{14}
+  \item {clear}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{26}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{31}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{38}
+    \subitem {arcade::IDisplayModule}, \hyperpage{50}
+  \item {close}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{32}
+  \item {closeAllLibs}
+    \subitem {arcade}, \hyperpage{15}
+  \item {Coin}
+    \subitem {arcade}, \hyperpage{11}, \hyperpage{13}
+  \item {Core}
+    \subitem {arcade::Core}, \hyperpage{46}
+  \item {core}
+    \subitem {arcade}, \hyperpage{15}
+  \item {core.cpp}
+    \subitem {help}, \hyperpage{74}
+    \subitem {main}, \hyperpage{74}
+  \item {createDisplayModule}
+    \subitem {ADisplayNcurses.cpp}, \hyperpage{81}
+    \subitem {ADisplaySdl.cpp}, \hyperpage{82}
+    \subitem {ADisplaySfml.cpp}, \hyperpage{83}
+    \subitem {arcade}, \hyperpage{16}
+    \subitem {IDisplayModule.hpp}, \hyperpage{80}
+  \item {createGameModule}
+    \subitem {arcade}, \hyperpage{16}
+    \subitem {IGameModule.hpp}, \hyperpage{80}
+    \subitem {nibbler.cpp}, \hyperpage{84}
+    \subitem {snake.cpp}, \hyperpage{85}
+
+  \indexspace
+
+  \item {deathCondition}
+    \subitem {arcade::Nibbler}, \hyperpage{56}
+    \subitem {arcade::Snake}, \hyperpage{66}
+  \item {deleteAllModules}
+    \subitem {arcade}, \hyperpage{17}
+  \item {displayBlock}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{26}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{32}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{39}
+    \subitem {arcade::IDisplayModule}, \hyperpage{51}
+  \item {displayLibs}
+    \subitem {arcade}, \hyperpage{11}
+  \item {displayMenu}
+    \subitem {arcade}, \hyperpage{17}
+  \item {displayText}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{27}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{32}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{39}
+    \subitem {arcade::IDisplayModule}, \hyperpage{51}
+  \item {Down}
+    \subitem {arcade}, \hyperpage{11, 12}
+
+  \indexspace
+
+  \item {end}
+    \subitem {arcade::Nibbler}, \hyperpage{56}
+    \subitem {arcade::Snake}, \hyperpage{66}
+  \item {Enemy}
+    \subitem {arcade}, \hyperpage{11}
+  \item {EnemyDead}
+    \subitem {arcade}, \hyperpage{11}
+  \item {EnemyVulnerable}
+    \subitem {arcade}, \hyperpage{11}
+  \item {EventType}
+    \subitem {arcade}, \hyperpage{12}
+
+  \indexspace
+
+  \item {fillDisplays}
+    \subitem {arcade}, \hyperpage{18}
+  \item {fillGames}
+    \subitem {arcade}, \hyperpage{18}
+  \item {findDisplay}
+    \subitem {arcade}, \hyperpage{18}
+  \item {findDisplayLib}
+    \subitem {arcade}, \hyperpage{19}
+  \item {findGame}
+    \subitem {arcade}, \hyperpage{19}
+  \item {Fruit}
+    \subitem {arcade}, \hyperpage{11}
+
+  \indexspace
+
+  \item {gameLibs}
+    \subitem {arcade}, \hyperpage{12}
+  \item {gameLoop}
+    \subitem {arcade}, \hyperpage{20}
+  \item {GameOver}
+    \subitem {arcade}, \hyperpage{13}
+  \item {gamePause}
+    \subitem {arcade::Nibbler}, \hyperpage{57}
+    \subitem {arcade::Snake}, \hyperpage{66}
+  \item {getBlockSize}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{27}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{33}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{40}
+  \item {getDisplayLibName}
+    \subitem {arcade}, \hyperpage{20}
+  \item {getGameLibName}
+    \subitem {arcade}, \hyperpage{21}
+  \item {getName}
+    \subitem {arcade::Core}, \hyperpage{47}
+    \subitem {arcade::ICore}, \hyperpage{49}
+    \subitem {arcade::IGameModule}, \hyperpage{53}
+    \subitem {arcade::Nibbler}, \hyperpage{57}
+    \subitem {arcade::Snake}, \hyperpage{66}
+  \item {getWindowSize}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{27}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{33}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{40}
+    \subitem {arcade::IDisplayModule}, \hyperpage{51}
+  \item {Grass}
+    \subitem {arcade}, \hyperpage{11}
+  \item {Gtk}
+    \subitem {arcade}, \hyperpage{12}
+
+  \indexspace
+
+  \item {headOnKillBloc}
+    \subitem {snake.cpp}, \hyperpage{85}
+  \item {headSnakeOnSnake}
+    \subitem {arcade::Nibbler}, \hyperpage{57}
+  \item {headSnakeOnWall}
+    \subitem {arcade::Nibbler}, \hyperpage{57}
+  \item {help}
+    \subitem {core.cpp}, \hyperpage{74}
+  \item {Hurt}
+    \subitem {arcade}, \hyperpage{13}
+
+  \indexspace
+
+  \item {IDisplayModule.hpp}
+    \subitem {createDisplayModule}, \hyperpage{80}
+  \item {IGameModule.hpp}
+    \subitem {createGameModule}, \hyperpage{80}
+  \item {Irrlicht}
+    \subitem {arcade}, \hyperpage{12}
+  \item {isFruitOnSnake}
+    \subitem {arcade::Nibbler}, \hyperpage{57}
+    \subitem {snake.cpp}, \hyperpage{85}
+
+  \indexspace
+
+  \item {Left}
+    \subitem {arcade}, \hyperpage{11, 12}
+  \item {libChange}
+    \subitem {arcade}, \hyperpage{13}
+
+  \indexspace
+
+  \item {main}
+    \subitem {core.cpp}, \hyperpage{74}
+  \item {Menu}
+    \subitem {arcade}, \hyperpage{21}
+  \item {moveCorps}
+    \subitem {arcade::Nibbler}, \hyperpage{57}
+    \subitem {arcade::Snake}, \hyperpage{67}
+  \item {moveSnake}
+    \subitem {arcade::Nibbler}, \hyperpage{58}
+    \subitem {arcade::Snake}, \hyperpage{67}
+
+  \indexspace
+
+  \item {Ncurses}
+    \subitem {arcade}, \hyperpage{12}
+  \item {Ndk}
+    \subitem {arcade}, \hyperpage{12}
+  \item {nextDisplay}
+    \subitem {arcade}, \hyperpage{22}
+  \item {NextGame}
+    \subitem {arcade}, \hyperpage{13}
+  \item {nextGame}
+    \subitem {arcade}, \hyperpage{22}
+  \item {nextIndex}
+    \subitem {arcade}, \hyperpage{22}
+  \item {NextLibrary}
+    \subitem {arcade}, \hyperpage{12, 13}
+  \item {Nibbler}
+    \subitem {arcade}, \hyperpage{13}
+    \subitem {arcade::Nibbler}, \hyperpage{55}
+  \item {nibbler.cpp}
+    \subitem {addVector}, \hyperpage{83}
+    \subitem {createGameModule}, \hyperpage{84}
+  \item {None}
+    \subitem {arcade}, \hyperpage{11}, \hyperpage{13}
+
+  \indexspace
+
+  \item {OpenGL}
+    \subitem {arcade}, \hyperpage{12}
+  \item {openLib}
+    \subitem {arcade}, \hyperpage{23}
+
+  \indexspace
+
+  \item {Pacman}
+    \subitem {arcade}, \hyperpage{13}
+  \item {Pause}
+    \subitem {arcade}, \hyperpage{12}
+  \item {placeFruits}
+    \subitem {arcade::Nibbler}, \hyperpage{58}
+  \item {playSound}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{27}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{33}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{40}
+    \subitem {arcade::IDisplayModule}, \hyperpage{51}
+  \item {pollEvent}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{28}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{34}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{40}
+    \subitem {arcade::IDisplayModule}, \hyperpage{51}
+  \item {PreviousGame}
+    \subitem {arcade}, \hyperpage{13}
+  \item {previousIndex}
+    \subitem {arcade}, \hyperpage{23}
+  \item {PreviousLibrary}
+    \subitem {arcade}, \hyperpage{12, 13}
+  \item {printFruit}
+    \subitem {arcade::Nibbler}, \hyperpage{58}
+    \subitem {arcade::Snake}, \hyperpage{67}
+  \item {printHighScore}
+    \subitem {arcade::Nibbler}, \hyperpage{58}
+    \subitem {arcade::Snake}, \hyperpage{67}
+  \item {printMap}
+    \subitem {arcade::Nibbler}, \hyperpage{58}
+    \subitem {arcade::Snake}, \hyperpage{68}
+  \item {printScoreAndName}
+    \subitem {arcade::Nibbler}, \hyperpage{59}
+    \subitem {arcade::Snake}, \hyperpage{68}
+  \item {printSnake}
+    \subitem {arcade::Nibbler}, \hyperpage{59}
+    \subitem {arcade::Snake}, \hyperpage{68}
+
+  \indexspace
+
+  \item {Qix}
+    \subitem {arcade}, \hyperpage{13}
+  \item {Qt5}
+    \subitem {arcade}, \hyperpage{12}
+  \item {Quit}
+    \subitem {arcade}, \hyperpage{12, 13}
+
+  \indexspace
+
+  \item {refresh}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{28}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{34}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{41}
+    \subitem {arcade::IDisplayModule}, \hyperpage{52}
+  \item {Restart}
+    \subitem {arcade}, \hyperpage{13}
+  \item {RestartGame}
+    \subitem {arcade}, \hyperpage{12}
+  \item {ReturnToSelectionMenu}
+    \subitem {arcade}, \hyperpage{12, 13}
+  \item {Right}
+    \subitem {arcade}, \hyperpage{11, 12}
+
+  \indexspace
+
+  \item {SDL2}
+    \subitem {arcade}, \hyperpage{12}
+  \item {setAllFruits}
+    \subitem {arcade::Nibbler}, \hyperpage{59}
+  \item {setMap}
+    \subitem {arcade::Nibbler}, \hyperpage{59}
+  \item {setName}
+    \subitem {arcade::Core}, \hyperpage{47}
+    \subitem {arcade::ICore}, \hyperpage{49}
+  \item {setNewFruit}
+    \subitem {arcade::Nibbler}, \hyperpage{59}
+    \subitem {arcade::Snake}, \hyperpage{68}
+  \item {setWindowSize}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{28}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{34}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{41}
+    \subitem {arcade::IDisplayModule}, \hyperpage{52}
+  \item {setWindowTitle}
+    \subitem {arcade::ADisplayNcurses}, \hyperpage{29}
+    \subitem {arcade::ADisplaySdl}, \hyperpage{35}
+    \subitem {arcade::ADisplaySfml}, \hyperpage{41}
+    \subitem {arcade::IDisplayModule}, \hyperpage{52}
+  \item {SFML}
+    \subitem {arcade}, \hyperpage{12}
+  \item {Snake}
+    \subitem {arcade}, \hyperpage{13}
+    \subitem {arcade::Snake}, \hyperpage{65}
+  \item {snake.cpp}
+    \subitem {createGameModule}, \hyperpage{85}
+    \subitem {headOnKillBloc}, \hyperpage{85}
+    \subitem {isFruitOnSnake}, \hyperpage{85}
+  \item {snakeEatFruit}
+    \subitem {arcade::Nibbler}, \hyperpage{60}
+    \subitem {arcade::Snake}, \hyperpage{68}
+  \item {Solarfox}
+    \subitem {arcade}, \hyperpage{13}
+  \item {Sound}
+    \subitem {arcade}, \hyperpage{13}
+  \item {src/core/chargeLib.cpp}, \hyperpage{73}
+  \item {src/core/closeLib.cpp}, \hyperpage{73}
+  \item {src/core/core.cpp}, \hyperpage{74}
+  \item {src/core/core.hpp}, \hyperpage{75}
+  \item {src/core/findLib.cpp}, \hyperpage{77}
+  \item {src/core/initLib.cpp}, \hyperpage{77}
+  \item {src/core/menu.cpp}, \hyperpage{77}
+  \item {src/errors/errors.hpp}, \hyperpage{78}
+  \item {src/interfaces/Event.hpp}, \hyperpage{78}
+  \item {src/interfaces/ICore.hpp}, \hyperpage{79}
+  \item {src/interfaces/IDisplayModule.hpp}, \hyperpage{79}
+  \item {src/interfaces/IGameModule.hpp}, \hyperpage{80}
+  \item {src/Ldisplay/ncurses/ADisplayNcurses.cpp}, \hyperpage{81}
+  \item {src/Ldisplay/ncurses/ADisplayNcurses.hpp}, \hyperpage{81}
+  \item {src/Ldisplay/sdl/ADisplaySdl.cpp}, \hyperpage{81}
+  \item {src/Ldisplay/sdl/ADisplaySdl.hpp}, \hyperpage{82}
+  \item {src/Ldisplay/sfml/ADisplaySfml.cpp}, \hyperpage{82}
+  \item {src/Ldisplay/sfml/ADisplaySfml.hpp}, \hyperpage{83}
+  \item {src/Lgame/nibbler/nibbler.cpp}, \hyperpage{83}
+  \item {src/Lgame/nibbler/nibbler.hpp}, \hyperpage{84}
+  \item {src/Lgame/snake/snake.cpp}, \hyperpage{84}
+  \item {src/Lgame/snake/snake.hpp}, \hyperpage{85}
+  \item {Start}
+    \subitem {arcade}, \hyperpage{13}
+  \item {start}
+    \subitem {arcade::IGameModule}, \hyperpage{53}
+    \subitem {arcade::Nibbler}, \hyperpage{60}
+    \subitem {arcade::Snake}, \hyperpage{69}
+  \item {Super}
+    \subitem {arcade}, \hyperpage{13}
+  \item {SwitchToNextGame}
+    \subitem {arcade}, \hyperpage{12}
+  \item {SwitchToPreviousGame}
+    \subitem {arcade}, \hyperpage{12}
+
+  \indexspace
+
+  \item {tick}
+    \subitem {arcade::IGameModule}, \hyperpage{54}
+    \subitem {arcade::Nibbler}, \hyperpage{60}
+    \subitem {arcade::Snake}, \hyperpage{69}
+  \item {type}
+    \subitem {arcade::Event}, \hyperpage{48}
+
+  \indexspace
+
+  \item {Up}
+    \subitem {arcade}, \hyperpage{11, 12}
+
+  \indexspace
+
+  \item {verifDown}
+    \subitem {arcade::Nibbler}, \hyperpage{60}
+  \item {verifLeft}
+    \subitem {arcade::Nibbler}, \hyperpage{60}
+  \item {verifRight}
+    \subitem {arcade::Nibbler}, \hyperpage{61}
+  \item {verifUp}
+    \subitem {arcade::Nibbler}, \hyperpage{61}
+  \item {Vulkain}
+    \subitem {arcade}, \hyperpage{12}
+
+  \indexspace
+
+  \item {what}
+    \subitem {cannotCloseLibrary}, \hyperpage{44}
+    \subitem {cannotCloseModule}, \hyperpage{44}
+    \subitem {cannotCreateModule}, \hyperpage{45}
+    \subitem {cannotOpenLibrary}, \hyperpage{46}
+
+  \indexspace
+
+  \item {x}
+    \subitem {arcade::Position}, \hyperpage{63}
+  \item {Xlib}
+    \subitem {arcade}, \hyperpage{12}
+
+  \indexspace
+
+  \item {y}
+    \subitem {arcade::Position}, \hyperpage{63}
+
+\end{theindex}

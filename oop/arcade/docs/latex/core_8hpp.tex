@@ -1,0 +1,104 @@
+\hypertarget{core_8hpp}{}\doxysection{src/core/core.hpp File Reference}
+\label{core_8hpp}\index{src/core/core.hpp@{src/core/core.hpp}}
+{\ttfamily \#include \char`\"{}../interfaces/\+IDisplay\+Module.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../interfaces/\+IGame\+Module.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../interfaces/\+ICore.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../errors/errors.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$dlfcn.\+h$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classarcade_1_1Core}{arcade\+::\+Core}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacearcade}{arcade}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacearcade_a22cc322a6503153711816f2edc874d54}{arcade\+::game\+Libs}} \{ \newline
+\mbox{\hyperlink{namespacearcade_a22cc322a6503153711816f2edc874d54a1571c2e6948cfb7f0edc74f9d81df320}{arcade\+::\+Snake}}
+, \mbox{\hyperlink{namespacearcade_a22cc322a6503153711816f2edc874d54acd7e0ba3d1b7fbad94c57ffe96a5567a}{arcade\+::\+Nibbler}}
+, \mbox{\hyperlink{namespacearcade_a22cc322a6503153711816f2edc874d54ab67f62fb5c8546de06cc590fb78345ea}{arcade\+::\+Pacman}}
+, \mbox{\hyperlink{namespacearcade_a22cc322a6503153711816f2edc874d54ab20ea46f16ac4f246e2e7af987950241}{arcade\+::\+Centipede}}
+, \newline
+\mbox{\hyperlink{namespacearcade_a22cc322a6503153711816f2edc874d54a663ccf298615c1aa8d107712bf13aa53}{arcade\+::\+Qix}}
+, \mbox{\hyperlink{namespacearcade_a22cc322a6503153711816f2edc874d54a381703973490cebb459ab0948c6d261d}{arcade\+::\+Solarfox}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcad}{arcade\+::display\+Libs}} \{ \newline
+\mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada136bb18128253ed44e287dc8f5ac8b94}{arcade\+::\+Ncurses}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada68e8b65de8af67f69cd91a3a6186c375}{arcade\+::\+SFML}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada1bce3f7cc8e3569f9c6099916313a8da}{arcade\+::\+SDL2}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada7758cf8312c41c1a1a5908473041b7d3}{arcade\+::\+Aalib}}
+, \newline
+\mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada7eadeefc54177bdb56de42dbae39d0f3}{arcade\+::\+Caca}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada01c360ce4d4fbd32145a3f659ca56e1a}{arcade\+::\+Open\+GL}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada309b9ae923e67349220531f4fd7b19c2}{arcade\+::\+Allegro}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcadaa044635a884909fbef145b88f1eb73e9}{arcade\+::\+Gtk}}
+, \newline
+\mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada2549d1cb71d9f0043cc54823e1a21d30}{arcade\+::\+Xlib}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcadae99a259e7fd6f640d18b132806bf8be4}{arcade\+::\+Irrlicht}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcadadc7cc4c14e26316ea31f45ab6c1e8471}{arcade\+::\+Qt5}}
+, \mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada5f0f9c0224d46079ae506ecf7686aa91}{arcade\+::\+Vulkain}}
+, \newline
+\mbox{\hyperlink{namespacearcade_a1598199ca8d88aa37ad483bdf7e0fcada36184d613b326b842e9fa383baf0be84}{arcade\+::\+Ndk}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacearcade_aed68323913dab36934e8243ff0d1f1f1}{arcade\+::lib\+Change}} \{ \newline
+\mbox{\hyperlink{namespacearcade_aed68323913dab36934e8243ff0d1f1f1aef9ab935ccc28a77a80c1816cbde8767}{arcade\+::\+Next\+Game}}
+, \mbox{\hyperlink{namespacearcade_aed68323913dab36934e8243ff0d1f1f1a197260aa3cdd6c040871f059ca83b580}{arcade\+::\+Previous\+Game}}
+, \mbox{\hyperlink{namespacearcade_aed68323913dab36934e8243ff0d1f1f1adf73c4c68fda5192c1d89209ef8df380}{arcade\+::\+Next\+Library}}
+, \mbox{\hyperlink{namespacearcade_aed68323913dab36934e8243ff0d1f1f1ab8c90457245584bd0b6fb59d9de08197}{arcade\+::\+Previous\+Library}}
+, \newline
+\mbox{\hyperlink{namespacearcade_aed68323913dab36934e8243ff0d1f1f1a42adf88a292b0907791e2647b5333eb0}{arcade\+::\+Return\+To\+Selection\+Menu}}
+, \mbox{\hyperlink{namespacearcade_aed68323913dab36934e8243ff0d1f1f1a51cfbcff36da74a9fc47f3a5140f99f2}{arcade\+::\+Restart}}
+, \mbox{\hyperlink{namespacearcade_aed68323913dab36934e8243ff0d1f1f1a0d82790b0612935992bd564a17ce37d6}{arcade\+::\+Quit}}
+, \mbox{\hyperlink{namespacearcade_aa67b8154b8917f28cdd6db8cc864269ba6adf97f83acf6453d4a6a4b1070f3754}{arcade\+::\+None}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+IDisplay\+Module $\ast$ \mbox{\hyperlink{namespacearcade_af1cc6695d65638ea0551e4f4d194f8d4}{arcade\+::create\+Display\+Module}} (void $\ast$lib)
+\begin{DoxyCompactList}\small\item\em Create a Display Module object. \end{DoxyCompactList}\item 
+IGame\+Module $\ast$ \mbox{\hyperlink{namespacearcade_a3ee5fd5e545dc6489d3823ef87fa17f2}{arcade\+::create\+Game\+Module}} (void $\ast$lib)
+\begin{DoxyCompactList}\small\item\em Create a Game Module object. \end{DoxyCompactList}\item 
+IGame\+Module $\ast$ \mbox{\hyperlink{namespacearcade_a4eea89178fc1caf77ce65c2892a86b3e}{arcade\+::next\+Game}} (Core $\ast$core, IGame\+Module $\ast$game\+Module, std\+::vector$<$ std\+::string $>$ \&game\+Libs)
+\item 
+IDisplay\+Module $\ast$ \mbox{\hyperlink{namespacearcade_ae69cb29bdbff47c702435ea464843cad}{arcade\+::next\+Display}} (Core $\ast$core, IDisplay\+Module $\ast$display\+Module, std\+::vector$<$ std\+::string $>$ \&display\+Libs)
+\item 
+std\+::string \mbox{\hyperlink{namespacearcade_acc0390fb1df741a8b745b84daaede4a9}{arcade\+::previous\+Index}} (std\+::vector$<$ std\+::string $>$ lib, std\+::string curent)
+\begin{DoxyCompactList}\small\item\em return the previous index of a vector and the last one if it\textquotesingle{}s the first \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacearcade_a0c64a3f3675f6844fbb94ceab7ac8629}{arcade\+::next\+Index}} (std\+::vector$<$ std\+::string $>$ lib, std\+::string curent)
+\begin{DoxyCompactList}\small\item\em return the next index of a vector and the first one if it\textquotesingle{}s the last \end{DoxyCompactList}\item 
+Core $\ast$ \mbox{\hyperlink{namespacearcade_ae0de0c3a744f2d90f48086a338085de0}{arcade\+::charge\+All\+Libs}} (void)
+\begin{DoxyCompactList}\small\item\em Get the All Libs object and fill core-\/$>$\+\_\+display\+Libs and core-\/$>$\+\_\+game\+Libs. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{namespacearcade_a4f687a52b4415044e0e36c47a2f4a065}{arcade\+::open\+Lib}} (const char $\ast$lib\+Name)
+\begin{DoxyCompactList}\small\item\em Open a library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacearcade_a9e5ebafb31e0e717cbee0d81f5b7c5b0}{arcade\+::close\+All\+Libs}} (Core $\ast$core)
+\begin{DoxyCompactList}\small\item\em Close all libraries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacearcade_a7d27e21e2dc5b1985e4646989a120cf9}{arcade\+::delete\+All\+Modules}} (IDisplay\+Module $\ast$display\+Module, IGame\+Module $\ast$game\+Module)
+\begin{DoxyCompactList}\small\item\em delete a display and a game module \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacearcade_a53938d83f52b941d753a931968d5e62b}{arcade\+::find\+Display\+Lib}} (Core $\ast$core, char $\ast$file)
+\begin{DoxyCompactList}\small\item\em Find a display library. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacearcade_ac17ef517c5bf26af3d9796a90d279bf8}{arcade\+::find\+Display}} (Core $\ast$core, enum display\+Libs libs)
+\begin{DoxyCompactList}\small\item\em Find a display library. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacearcade_a7df3ad3df0b1cce46769dc07022b6f1d}{arcade\+::find\+Game}} (Core $\ast$core, enum game\+Libs libs)
+\begin{DoxyCompactList}\small\item\em Find a game library. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacearcade_a18bc343d20cf25caed6578f18512726e}{arcade\+::\+Menu}} (IDisplay\+Module $\ast$display, Core $\ast$core, std\+::string first\+Display)
+\begin{DoxyCompactList}\small\item\em Print the menu and handle the events. THIS FUNCTION CALL THE GAME LOOP. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacearcade_ab5fbb0cf8ed78d47a9bcd008777b6320}{arcade\+::get\+Game\+Lib\+Name}} (enum game\+Libs game\+Lib)
+\begin{DoxyCompactList}\small\item\em Get the Game Lib Name object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacearcade_a31772af72d6b14f001e681066abd29c3}{arcade\+::get\+Display\+Lib\+Name}} (enum display\+Libs display\+Lib)
+\begin{DoxyCompactList}\small\item\em Get the Display Lib Name object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacearcade_a068c90e03db182cfe1fc34f4705463a5}{arcade\+::game\+Loop}} (Core $\ast$core, IDisplay\+Module $\ast$display\+Module, IGame\+Module $\ast$game\+Module, std\+::vector$<$ std\+::string $>$ games, std\+::vector$<$ std\+::string $>$ displays, std\+::string game\+Name, std\+::string display\+Name)
+\begin{DoxyCompactList}\small\item\em game loop \end{DoxyCompactList}\end{DoxyCompactItemize}

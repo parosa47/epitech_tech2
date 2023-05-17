@@ -1,0 +1,345 @@
+\hypertarget{classarcade_1_1ADisplaySfml}{}\doxysection{arcade\+::ADisplay\+Sfml Class Reference}
+\label{classarcade_1_1ADisplaySfml}\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+
+
+{\ttfamily \#include $<$ADisplay\+Sfml.\+hpp$>$}
+
+Inheritance diagram for arcade\+::ADisplay\+Sfml\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1ADisplaySfml}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1ADisplaySfml_aaa2c2093190497ba6ad93d2f88ed138e}{ADisplay\+Sfml}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new arcade\+::A Display Sfml\+::A Display Sfml object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1ADisplaySfml_a858cd3ab745ce21524cabfdc4e994398}{$\sim$\+ADisplay\+Sfml}} () override
+\begin{DoxyCompactList}\small\item\em Destroy the arcade\+::A Display Sfml\+::A Display Sfml object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySfml_ab11e22a612bfda957528c4d25ff531b7}{display\+Block}} (\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}} block\+Type, \mbox{\hyperlink{structarcade_1_1Position}{Position}} pos) override
+\begin{DoxyCompactList}\small\item\em display a block on the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a1f2a25944d1c6dca941e0a22b134dd1b}{display\+Text}} (const std\+::string \&text, \mbox{\hyperlink{structarcade_1_1Position}{Position}} pos) override
+\begin{DoxyCompactList}\small\item\em display a text on the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a19e38ceac24e52a93aeb9e7a3cca2048}{clear}} () override
+\begin{DoxyCompactList}\small\item\em clear the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySfml_acf65865fea0c6c4fd4b7a37b6ccff017}{refresh}} () override
+\begin{DoxyCompactList}\small\item\em refresh the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a95f7433c2e8c9d740d8a6bd006ee5685}{play\+Sound}} (\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{Sound}} sound) override
+\begin{DoxyCompactList}\small\item\em get the input from the user \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{Event}} $>$ \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a2a8991d89dbd39e90e46321aae405ef2}{poll\+Event}} () override
+\begin{DoxyCompactList}\small\item\em get the input from the user \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a57c2a5cdacf1c33428c73044b5712a5c}{set\+Window\+Size}} (\mbox{\hyperlink{structarcade_1_1Position}{Position}} size) override
+\begin{DoxyCompactList}\small\item\em set the size of the window \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structarcade_1_1Position}{Position}} \mbox{\hyperlink{classarcade_1_1ADisplaySfml_aa73feafa3282ab038b8c2eda1876267c}{get\+Window\+Size}} () override
+\begin{DoxyCompactList}\small\item\em get the size of the window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a99981c381dda473fdda1283456fd496c}{set\+Window\+Title}} (const std\+::string \&title) override
+\begin{DoxyCompactList}\small\item\em set the title of the window \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a714e2d053a2cb370842e6d4f94906fee}{get\+Block\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a88ea8379749caba28ad462426ff0d8d9}{\+\_\+window}}
+\item 
+sf\+::\+Font \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a487c591b74205395b6c07dabdc6ea279}{\+\_\+font}}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a51e02cf3773c1951c56aec60e2aa1a9b}{\+\_\+\+Coin\+Buffer}}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{classarcade_1_1ADisplaySfml_ae6e666e4667247bcf91b4a8de031f4eb}{\+\_\+hurt\+Buffer}}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{classarcade_1_1ADisplaySfml_ac74057681c61b5925a3644e2cf98b3b0}{\+\_\+game\+Over\+Buffer}}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a9e2d4363f3291ee8851c2033f5d3b856}{\+\_\+start\+Buffer}}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{classarcade_1_1ADisplaySfml_a51474452329c34bc45c43d765783cd59}{\+\_\+super\+Buffer}}
+\item 
+\mbox{\hyperlink{structarcade_1_1Position}{Position}} \mbox{\hyperlink{classarcade_1_1ADisplaySfml_aae8d0cdf89b62d6cf22435b8daff92df}{\+\_\+window\+Size}}
+\item 
+int \mbox{\hyperlink{classarcade_1_1ADisplaySfml_ac1c08e0369774cc4066f7b8b8dd7120f}{\+\_\+block\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_aaa2c2093190497ba6ad93d2f88ed138e}\label{classarcade_1_1ADisplaySfml_aaa2c2093190497ba6ad93d2f88ed138e}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!ADisplaySfml@{ADisplaySfml}}
+\index{ADisplaySfml@{ADisplaySfml}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{ADisplaySfml()}{ADisplaySfml()}}
+{\footnotesize\ttfamily arcade\+::\+ADisplay\+Sfml\+::\+ADisplay\+Sfml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new arcade\+::A Display Sfml\+::A Display Sfml object. 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a858cd3ab745ce21524cabfdc4e994398}\label{classarcade_1_1ADisplaySfml_a858cd3ab745ce21524cabfdc4e994398}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!````~ADisplaySfml@{$\sim$ADisplaySfml}}
+\index{````~ADisplaySfml@{$\sim$ADisplaySfml}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{$\sim$ADisplaySfml()}{~ADisplaySfml()}}
+{\footnotesize\ttfamily arcade\+::\+ADisplay\+Sfml\+::$\sim$\+ADisplay\+Sfml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destroy the arcade\+::A Display Sfml\+::A Display Sfml object. 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a19e38ceac24e52a93aeb9e7a3cca2048}\label{classarcade_1_1ADisplaySfml_a19e38ceac24e52a93aeb9e7a3cca2048}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!clear@{clear}}
+\index{clear@{clear}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sfml\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear the screen 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a1d4538558d9fd5237fb91604e1b7d692}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_ab11e22a612bfda957528c4d25ff531b7}\label{classarcade_1_1ADisplaySfml_ab11e22a612bfda957528c4d25ff531b7}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!displayBlock@{displayBlock}}
+\index{displayBlock@{displayBlock}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{displayBlock()}{displayBlock()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sfml\+::display\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_aeb065f4fb1a02011cecdf63e8c401fbc}{Block\+Type}}}]{block\+Type,  }\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+display a block on the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block\+Type} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a4977e9d3269f643097dc7541b14efd9d}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a1f2a25944d1c6dca941e0a22b134dd1b}\label{classarcade_1_1ADisplaySfml_a1f2a25944d1c6dca941e0a22b134dd1b}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!displayText@{displayText}}
+\index{displayText@{displayText}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{displayText()}{displayText()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sfml\+::display\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+display a text on the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \\
+\hline
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af71e4823004b5eeb9cfe69fc22cfeaae}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a714e2d053a2cb370842e6d4f94906fee}\label{classarcade_1_1ADisplaySfml_a714e2d053a2cb370842e6d4f94906fee}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!getBlockSize@{getBlockSize}}
+\index{getBlockSize@{getBlockSize}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{getBlockSize()}{getBlockSize()}}
+{\footnotesize\ttfamily int arcade\+::\+ADisplay\+Sfml\+::get\+Block\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_aa73feafa3282ab038b8c2eda1876267c}\label{classarcade_1_1ADisplaySfml_aa73feafa3282ab038b8c2eda1876267c}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!getWindowSize@{getWindowSize}}
+\index{getWindowSize@{getWindowSize}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{getWindowSize()}{getWindowSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structarcade_1_1Position}{arcade\+::\+Position}} arcade\+::\+ADisplay\+Sfml\+::get\+Window\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the size of the window 
+
+\begin{DoxyReturn}{Returns}
+std\+::list$<$arcade\+::\+Event$>$ list of events 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_aeb7fe1773855a8d8d1ebd063a4758f64}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a95f7433c2e8c9d740d8a6bd006ee5685}\label{classarcade_1_1ADisplaySfml_a95f7433c2e8c9d740d8a6bd006ee5685}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!playSound@{playSound}}
+\index{playSound@{playSound}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sfml\+::play\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_a2a35cc7155d5e899b10b4d8472facefa}{Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the input from the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a58c6cd5ff24c19af166395de4ad7a52a}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a2a8991d89dbd39e90e46321aae405ef2}\label{classarcade_1_1ADisplaySfml_a2a8991d89dbd39e90e46321aae405ef2}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!pollEvent@{pollEvent}}
+\index{pollEvent@{pollEvent}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{pollEvent()}{pollEvent()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{structarcade_1_1Event}{arcade\+::\+Event}} $>$ arcade\+::\+ADisplay\+Sfml\+::poll\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the input from the user 
+
+\begin{DoxyReturn}{Returns}
+std\+::list$<$arcade\+::\+Event$>$ list of events 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_acb4657aca3a807b4cbba707fd5ba656e}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_acf65865fea0c6c4fd4b7a37b6ccff017}\label{classarcade_1_1ADisplaySfml_acf65865fea0c6c4fd4b7a37b6ccff017}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!refresh@{refresh}}
+\index{refresh@{refresh}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sfml\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+refresh the screen 
+
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af724ff4cdee60787cc30475a06f8b9e6}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a57c2a5cdacf1c33428c73044b5712a5c}\label{classarcade_1_1ADisplaySfml_a57c2a5cdacf1c33428c73044b5712a5c}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!setWindowSize@{setWindowSize}}
+\index{setWindowSize@{setWindowSize}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{setWindowSize()}{setWindowSize()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sfml\+::set\+Window\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1Position}{Position}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set the size of the window 
+
+\begin{DoxyReturn}{Returns}
+std\+::list$<$arcade\+::\+Event$>$ list of events 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_af50661bdc3546d41bc5323857b2b1d51}{arcade\+::\+IDisplay\+Module}}.
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a99981c381dda473fdda1283456fd496c}\label{classarcade_1_1ADisplaySfml_a99981c381dda473fdda1283456fd496c}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!setWindowTitle@{setWindowTitle}}
+\index{setWindowTitle@{setWindowTitle}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{setWindowTitle()}{setWindowTitle()}}
+{\footnotesize\ttfamily void arcade\+::\+ADisplay\+Sfml\+::set\+Window\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set the title of the window 
+
+\begin{DoxyReturn}{Returns}
+std\+::list$<$arcade\+::\+Event$>$ list of events 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+pier-\/alexandre 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IDisplayModule_a031086aa802c05fbef922254f5f1e969}{arcade\+::\+IDisplay\+Module}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_ac1c08e0369774cc4066f7b8b8dd7120f}\label{classarcade_1_1ADisplaySfml_ac1c08e0369774cc4066f7b8b8dd7120f}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_blockSize@{\_blockSize}}
+\index{\_blockSize@{\_blockSize}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_blockSize}{\_blockSize}}
+{\footnotesize\ttfamily int arcade\+::\+ADisplay\+Sfml\+::\+\_\+block\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a51e02cf3773c1951c56aec60e2aa1a9b}\label{classarcade_1_1ADisplaySfml_a51e02cf3773c1951c56aec60e2aa1a9b}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_CoinBuffer@{\_CoinBuffer}}
+\index{\_CoinBuffer@{\_CoinBuffer}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_CoinBuffer}{\_CoinBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer arcade\+::\+ADisplay\+Sfml\+::\+\_\+\+Coin\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a487c591b74205395b6c07dabdc6ea279}\label{classarcade_1_1ADisplaySfml_a487c591b74205395b6c07dabdc6ea279}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_font@{\_font}}
+\index{\_font@{\_font}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_font}{\_font}}
+{\footnotesize\ttfamily sf\+::\+Font arcade\+::\+ADisplay\+Sfml\+::\+\_\+font\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_ac74057681c61b5925a3644e2cf98b3b0}\label{classarcade_1_1ADisplaySfml_ac74057681c61b5925a3644e2cf98b3b0}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_gameOverBuffer@{\_gameOverBuffer}}
+\index{\_gameOverBuffer@{\_gameOverBuffer}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_gameOverBuffer}{\_gameOverBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer arcade\+::\+ADisplay\+Sfml\+::\+\_\+game\+Over\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_ae6e666e4667247bcf91b4a8de031f4eb}\label{classarcade_1_1ADisplaySfml_ae6e666e4667247bcf91b4a8de031f4eb}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_hurtBuffer@{\_hurtBuffer}}
+\index{\_hurtBuffer@{\_hurtBuffer}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_hurtBuffer}{\_hurtBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer arcade\+::\+ADisplay\+Sfml\+::\+\_\+hurt\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a9e2d4363f3291ee8851c2033f5d3b856}\label{classarcade_1_1ADisplaySfml_a9e2d4363f3291ee8851c2033f5d3b856}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_startBuffer@{\_startBuffer}}
+\index{\_startBuffer@{\_startBuffer}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_startBuffer}{\_startBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer arcade\+::\+ADisplay\+Sfml\+::\+\_\+start\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a51474452329c34bc45c43d765783cd59}\label{classarcade_1_1ADisplaySfml_a51474452329c34bc45c43d765783cd59}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_superBuffer@{\_superBuffer}}
+\index{\_superBuffer@{\_superBuffer}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_superBuffer}{\_superBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer arcade\+::\+ADisplay\+Sfml\+::\+\_\+super\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_a88ea8379749caba28ad462426ff0d8d9}\label{classarcade_1_1ADisplaySfml_a88ea8379749caba28ad462426ff0d8d9}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_window@{\_window}}
+\index{\_window@{\_window}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window arcade\+::\+ADisplay\+Sfml\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classarcade_1_1ADisplaySfml_aae8d0cdf89b62d6cf22435b8daff92df}\label{classarcade_1_1ADisplaySfml_aae8d0cdf89b62d6cf22435b8daff92df}} 
+\index{arcade::ADisplaySfml@{arcade::ADisplaySfml}!\_windowSize@{\_windowSize}}
+\index{\_windowSize@{\_windowSize}!arcade::ADisplaySfml@{arcade::ADisplaySfml}}
+\doxysubsubsection{\texorpdfstring{\_windowSize}{\_windowSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structarcade_1_1Position}{Position}} arcade\+::\+ADisplay\+Sfml\+::\+\_\+window\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Ldisplay/sfml/\mbox{\hyperlink{ADisplaySfml_8hpp}{ADisplay\+Sfml.\+hpp}}\item 
+src/\+Ldisplay/sfml/\mbox{\hyperlink{ADisplaySfml_8cpp}{ADisplay\+Sfml.\+cpp}}\end{DoxyCompactItemize}
